@@ -43,6 +43,7 @@ export type ProblemCatalogItem = {
   link: string;
   name: string;
   rating: number;
+  tags: string[];
 };
 
 async function codeforcesApi<T>(endpoint: string, params: Record<string, string | number>, revalidateSeconds = 0): Promise<T> {
@@ -203,6 +204,7 @@ export async function fetchProblemCatalog(): Promise<ProblemCatalogItem[]> {
       key: makeProblemKey(problem.contestId, problem.index, problem.name as string),
       link: buildProblemLink(problem.contestId as number, problem.index as string),
       name: problem.name as string,
-      rating: problem.rating as number
+      rating: problem.rating as number,
+      tags: (problem.tags ?? []).filter((tag): tag is string => typeof tag === "string")
     }));
 }

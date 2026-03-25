@@ -2,9 +2,11 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { randomUUID } from "node:crypto";
 
+import { getInitialPlatformRating, getRankTier } from "@/lib/battle";
 import { buildSnapshotSummary } from "@/lib/cfmasters";
 import { fetchCodeforcesSnapshot } from "@/lib/codeforces";
-import type { BattleRecord, Focus, FriendCard, Snapshot, StoredUser } from "@/lib/types";
+import { resolveCountryMetadata } from "@/lib/geo";
+import type { BattleRecord, BattleRoom, Focus, FriendCard, LeaderboardEntry, Snapshot, StoredUser } from "@/lib/types";
 import { buildProfileUrl, formatRank, handleKey, normalizeEmail, normalizeHandle, nowIso } from "@/lib/utils";
 
 type LocalUser = {
@@ -17,6 +19,13 @@ type LocalUser = {
   focus: Focus;
   rank: string | null;
   rating: number | null;
+  platformRating: number;
+  initialPlatformRating: number;
+  battleWins: number;
+  battleLosses: number;
+  battleDraws: number;
+  battlesPlayed: number;
+  country: string | null;
   titlePhoto: string | null;
   snapshot: Snapshot;
   createdAt: string;
@@ -44,12 +53,7 @@ type LocalHandleCache = {
   lastSync: string;
 };
 
-type LocalBattle = {
-  id: string;
-  winnerUserId?: string | null;
-  loserUserId?: string | null;
-  createdAt: string;
-};
+type LocalBattle = BattleRoom;
 
 type LocalDb = {
   users: LocalUser[];
@@ -93,6 +97,14 @@ function toStoredUser(user: LocalUser): StoredUser {
     focus: user.focus,
     rank: user.rank,
     rating: user.rating,
+    platformRating: user.platformRating,
+    initialPlatformRating: user.initialPlatformRating,
+    battleWins: user.battleWins,
+    battleLosses: user.battleLosses,
+    battleDraws: user.battleDraws,
+    battlesPlayed: user.battlesPlayed,
+    country: user.country,
+    continent: resolveCountryMetadata(user.country).continent,
     titlePhoto: user.titlePhoto,
     snapshot: user.snapshot,
     createdAt: user.createdAt
@@ -174,6 +186,8 @@ export async function createLocalUserAccount(input: {
   }
 
   const snapshot = await fetchCodeforcesSnapshot(input.handle);
+  const initialPlatformRating = getInitialPlatformRating(snapshot.profile.rating ?? null);
+  const resolvedCountry = resolveCountryMetadata(snapshot.profile.country ?? null);
   const user: LocalUser = {
     id: randomUUID(),
     email: input.email,
@@ -184,6 +198,13 @@ export async function createLocalUserAccount(input: {
     focus: "steady",
     rank: snapshot.profile.rank ?? null,
     rating: snapshot.profile.rating ?? null,
+    platformRating: initialPlatformRating,
+    initialPlatformRating,
+    battleWins: 0,
+    battleLosses: 0,
+    battleDraws: 0,
+    battlesPlayed: 0,
+    country: resolvedCountry.country,
     titlePhoto: snapshot.profile.titlePhoto ?? null,
     snapshot,
     createdAt: nowIso()
@@ -206,6 +227,9 @@ export async function updateLocalUserSnapshot(userId: string): Promise<StoredUse
   user.handleKey = handleKey(snapshot.profile.handle);
   user.rank = snapshot.profile.rank ?? null;
   user.rating = snapshot.profile.rating ?? null;
+  if (!user.country && snapshot.profile.country) {
+    user.country = resolveCountryMetadata(snapshot.profile.country).country;
+  }
   user.titlePhoto = snapshot.profile.titlePhoto ?? null;
   user.snapshot = snapshot;
   await saveDb(db);
@@ -220,6 +244,17 @@ export async function updateLocalUserFocus(userId: string, focus: Focus): Promis
   }
 
   user.focus = focus;
+  await saveDb(db);
+}
+
+export async function updateLocalUserCountry(userId: string, country: string | null): Promise<void> {
+  const db = await loadDb();
+  const user = findUserById(db, userId);
+  if (!user) {
+    throw new Error("User not found.");
+  }
+
+  user.country = country;
   await saveDb(db);
 }
 
@@ -396,10 +431,16 @@ export async function getLocalBattleRecord(userId: string): Promise<BattleRecord
   const db = await loadDb();
   const wins = db.battles.filter((battle) => battle.winnerUserId === userId).length;
   const losses = db.battles.filter((battle) => battle.loserUserId === userId).length;
+  const draws = db.battles.filter(
+    (battle) => battle.status === "finished" && !battle.winnerUserId && !battle.loserUserId && battle.participants.some((participant) => participant.userId === userId)
+  ).length;
+  const total = wins + losses + draws;
   return {
     wins,
     losses,
-    total: wins + losses
+    draws,
+    total,
+    winRate: total ? Math.round((wins / total) * 100) : 0
   };
 }
 
@@ -473,4 +514,52 @@ export async function refreshLocalFriendSnapshot(viewerId: string, handle: strin
   tracked.trackedHandleKey = handleKey(snapshot.profile.handle);
   await saveDb(db);
   return snapshot.profile.handle;
+}
+
+export async function getLocalLeaderboardEntries(filters: {
+  query?: string;
+  country?: string;
+  continent?: string;
+}): Promise<LeaderboardEntry[]> {
+  const db = await loadDb();
+  const query = filters.query?.trim().toLowerCase() ?? "";
+  const countryFilter = filters.country?.trim().toLowerCase() ?? "";
+  const continentFilter = filters.continent?.trim().toLowerCase() ?? "";
+
+  return db.users
+    .map((user) => {
+      const resolvedCountry = resolveCountryMetadata(user.country);
+      const total = user.battlesPlayed || 0;
+      return {
+        rank: 0,
+        handle: user.handle,
+        platformRating: user.platformRating,
+        rankTier: getRankTier(user.platformRating),
+        country: resolvedCountry.country,
+        continent: resolvedCountry.continent,
+        countryCode: resolvedCountry.countryCode,
+        battlesPlayed: total,
+        wins: user.battleWins,
+        losses: user.battleLosses,
+        draws: user.battleDraws,
+        winRate: total ? Math.round((user.battleWins / total) * 100) : 0
+      };
+    })
+    .filter((entry) => {
+      if (query && !entry.handle.toLowerCase().includes(query)) {
+        return false;
+      }
+      if (countryFilter && entry.country?.toLowerCase() !== countryFilter) {
+        return false;
+      }
+      if (continentFilter && entry.continent?.toLowerCase() !== continentFilter) {
+        return false;
+      }
+      return true;
+    })
+    .sort((left, right) => right.platformRating - left.platformRating || left.handle.localeCompare(right.handle))
+    .map((entry, index) => ({
+      ...entry,
+      rank: index + 1
+    }));
 }

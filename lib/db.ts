@@ -136,6 +136,13 @@ export async function ensureDatabase(): Promise<void> {
           focus TEXT NOT NULL DEFAULT 'steady',
           rank TEXT,
           rating INTEGER,
+          platform_rating INTEGER NOT NULL DEFAULT 1200,
+          initial_platform_rating INTEGER NOT NULL DEFAULT 1200,
+          battle_wins INTEGER NOT NULL DEFAULT 0,
+          battle_losses INTEGER NOT NULL DEFAULT 0,
+          battle_draws INTEGER NOT NULL DEFAULT 0,
+          battles_played INTEGER NOT NULL DEFAULT 0,
+          country TEXT,
           title_photo TEXT,
           profile_json JSONB NOT NULL DEFAULT '{}'::jsonb,
           solved_json JSONB NOT NULL DEFAULT '{}'::jsonb,
@@ -184,6 +191,11 @@ export async function ensureDatabase(): Promise<void> {
       `;
 
       await sql`
+        CREATE INDEX IF NOT EXISTS friendships_owner_idx
+        ON friendships (owner_user_id)
+      `;
+
+      await sql`
         CREATE TABLE IF NOT EXISTS handle_cache (
           handle_key TEXT PRIMARY KEY,
           handle TEXT NOT NULL,
@@ -197,10 +209,126 @@ export async function ensureDatabase(): Promise<void> {
       await sql`
         CREATE TABLE IF NOT EXISTS battles (
           id TEXT PRIMARY KEY,
+          player_one_user_id TEXT REFERENCES users(id) ON DELETE CASCADE,
+          player_two_user_id TEXT REFERENCES users(id) ON DELETE CASCADE,
           winner_user_id TEXT REFERENCES users(id) ON DELETE SET NULL,
           loser_user_id TEXT REFERENCES users(id) ON DELETE SET NULL,
+          status TEXT NOT NULL DEFAULT 'finished',
+          battle_json JSONB NOT NULL DEFAULT '{}'::jsonb,
+          started_at TIMESTAMPTZ,
+          ends_at TIMESTAMPTZ,
+          finished_at TIMESTAMPTZ,
           created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
         )
+      `;
+
+      await sql`
+        ALTER TABLE users
+        ADD COLUMN IF NOT EXISTS platform_rating INTEGER
+      `;
+
+      await sql`
+        ALTER TABLE users
+        ADD COLUMN IF NOT EXISTS initial_platform_rating INTEGER
+      `;
+
+      await sql`
+        ALTER TABLE users
+        ADD COLUMN IF NOT EXISTS battle_wins INTEGER NOT NULL DEFAULT 0
+      `;
+
+      await sql`
+        ALTER TABLE users
+        ADD COLUMN IF NOT EXISTS battle_losses INTEGER NOT NULL DEFAULT 0
+      `;
+
+      await sql`
+        ALTER TABLE users
+        ADD COLUMN IF NOT EXISTS battle_draws INTEGER NOT NULL DEFAULT 0
+      `;
+
+      await sql`
+        ALTER TABLE users
+        ADD COLUMN IF NOT EXISTS battles_played INTEGER NOT NULL DEFAULT 0
+      `;
+
+      await sql`
+        ALTER TABLE users
+        ADD COLUMN IF NOT EXISTS country TEXT
+      `;
+
+      await sql`
+        CREATE INDEX IF NOT EXISTS sessions_user_id_idx
+        ON sessions (user_id)
+      `;
+
+      await sql`
+        CREATE INDEX IF NOT EXISTS users_platform_rating_idx
+        ON users (platform_rating DESC, handle_key ASC)
+      `;
+
+      await sql`
+        UPDATE users
+        SET initial_platform_rating = COALESCE(
+              initial_platform_rating,
+              CASE
+                WHEN rating IS NOT NULL THEN ROUND(rating * 0.9 + 100)::int
+                ELSE 1200
+              END
+            ),
+            platform_rating = COALESCE(
+              platform_rating,
+              initial_platform_rating,
+              CASE
+                WHEN rating IS NOT NULL THEN ROUND(rating * 0.9 + 100)::int
+                ELSE 1200
+              END
+            ),
+            country = COALESCE(NULLIF(country, ''), NULLIF(TRIM(COALESCE(profile_json->>'country', '')), ''))
+        WHERE initial_platform_rating IS NULL
+           OR platform_rating IS NULL
+           OR country IS NULL
+           OR country = ''
+      `;
+
+      await sql`
+        ALTER TABLE battles
+        ADD COLUMN IF NOT EXISTS player_one_user_id TEXT REFERENCES users(id) ON DELETE CASCADE
+      `;
+
+      await sql`
+        ALTER TABLE battles
+        ADD COLUMN IF NOT EXISTS player_two_user_id TEXT REFERENCES users(id) ON DELETE CASCADE
+      `;
+
+      await sql`
+        ALTER TABLE battles
+        ADD COLUMN IF NOT EXISTS status TEXT NOT NULL DEFAULT 'finished'
+      `;
+
+      await sql`
+        ALTER TABLE battles
+        ADD COLUMN IF NOT EXISTS battle_json JSONB NOT NULL DEFAULT '{}'::jsonb
+      `;
+
+      await sql`
+        ALTER TABLE battles
+        ADD COLUMN IF NOT EXISTS started_at TIMESTAMPTZ
+      `;
+
+      await sql`
+        ALTER TABLE battles
+        ADD COLUMN IF NOT EXISTS ends_at TIMESTAMPTZ
+      `;
+
+      await sql`
+        ALTER TABLE battles
+        ADD COLUMN IF NOT EXISTS finished_at TIMESTAMPTZ
+      `;
+
+      await sql`
+        UPDATE battles
+        SET status = COALESCE(NULLIF(status, ''), 'finished')
       `;
 
       await sql`
@@ -213,6 +341,18 @@ export async function ensureDatabase(): Promise<void> {
 
       await sql`
         CREATE INDEX IF NOT EXISTS friendships_owner_idx ON friendships (owner_user_id)
+      `;
+
+      await sql`
+        CREATE INDEX IF NOT EXISTS battles_player_one_idx ON battles (player_one_user_id)
+      `;
+
+      await sql`
+        CREATE INDEX IF NOT EXISTS battles_player_two_idx ON battles (player_two_user_id)
+      `;
+
+      await sql`
+        CREATE INDEX IF NOT EXISTS battles_status_idx ON battles (status)
       `;
     })();
   }

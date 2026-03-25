@@ -10,15 +10,10 @@ import { withMessage } from "@/lib/utils";
 
 type FriendDetailPageProps = {
   params: Promise<{ handle: string }>;
-  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default async function FriendDetailPage({ params, searchParams }: FriendDetailPageProps) {
-  const [{ handle }, resolvedSearchParams, user] = await Promise.all([
-    params,
-    searchParams ?? Promise.resolve({}),
-    requireCurrentUser()
-  ]);
+export default async function FriendDetailPage({ params }: FriendDetailPageProps) {
+  const [{ handle }, user] = await Promise.all([params, requireCurrentUser()]);
 
   try {
     const friend = await getFriendSnapshotForViewer(user.id, handle);
@@ -26,7 +21,7 @@ export default async function FriendDetailPage({ params, searchParams }: FriendD
 
     return (
       <main className="page-shell">
-        <FlashNotice searchParams={resolvedSearchParams} />
+        <FlashNotice />
 
         <section className="hero-grid card">
           <div className="hero-copy">

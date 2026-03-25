@@ -1,16 +1,26 @@
+"use client";
+
+import { Suspense } from "react";
+import { useSearchParams } from "next/navigation";
+
 import { getSearchParam } from "@/lib/utils";
 
-type FlashNoticeProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
-};
-
-export function FlashNotice({ searchParams }: FlashNoticeProps) {
-  const message = getSearchParam(searchParams?.message);
-  const type = getSearchParam(searchParams?.type);
+function FlashNoticeBody() {
+  const searchParams = useSearchParams();
+  const message = getSearchParam(searchParams.get("message") ?? undefined);
+  const type = getSearchParam(searchParams.get("type") ?? undefined);
 
   if (!message) {
     return null;
   }
 
   return <div className={`flash flash-${type === "success" ? "success" : "error"}`}>{message}</div>;
+}
+
+export function FlashNotice() {
+  return (
+    <Suspense fallback={null}>
+      <FlashNoticeBody />
+    </Suspense>
+  );
 }

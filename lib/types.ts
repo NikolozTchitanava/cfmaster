@@ -1,5 +1,51 @@
 export type Focus = "warmup" | "steady" | "stretch";
 
+export type Continent =
+  | "Africa"
+  | "Asia"
+  | "Europe"
+  | "North America"
+  | "Oceania"
+  | "South America";
+
+export type RankTier =
+  | "Newbie"
+  | "Pupil"
+  | "Specialist"
+  | "Expert"
+  | "Candidate Master"
+  | "Master"
+  | "International Master"
+  | "Grandmaster"
+  | "Legendary";
+
+export type BattleDifficulty = "easy" | "medium" | "hard";
+export type BattleStatus = "pending" | "active" | "finished" | "declined" | "expired";
+
+export type CrucialChipType =
+  | "guarantee_tag"
+  | "ban_tag"
+  | "double_ban"
+  | "pressure_cooker"
+  | "anti_comfort";
+
+export type AdditiveChipType = "second_chance" | "precision" | "strict_judge" | "fast_start";
+
+export type CrucialChipSelection = {
+  type: CrucialChipType;
+  tag?: string | null;
+  tags?: string[];
+};
+
+export type AdditiveChipSelection = {
+  type: AdditiveChipType;
+};
+
+export type BattleChipLoadout = {
+  crucial: CrucialChipSelection;
+  additive: AdditiveChipSelection;
+};
+
 export type CodeforcesProfile = {
   handle: string;
   rating?: number | null;
@@ -35,6 +81,84 @@ export type Snapshot = {
   solved: SolvedData;
   rating: RatingPoint[];
   syncedAt?: string | null;
+};
+
+export type BattleProblem = {
+  problemKey: string;
+  contestId: number;
+  index: string;
+  name: string;
+  link: string;
+  tags: string[];
+  rating: number;
+  slot: BattleDifficulty;
+  targetMin: number;
+  targetMax: number;
+  targetLabel: string;
+};
+
+export type BattleProblemProgress = {
+  problemKey: string;
+  playerOneWrongAttempts: number;
+  playerTwoWrongAttempts: number;
+  playerOneAcceptedAt: string | null;
+  playerTwoAcceptedAt: string | null;
+  playerOneAcceptedMinute: number | null;
+  playerTwoAcceptedMinute: number | null;
+};
+
+export type BattleParticipantState = {
+  userId: string;
+  handle: string;
+  platformRating: number;
+  initialPlatformRating: number;
+  battlesPlayed: number;
+  country: string | null;
+  continent: Continent | null;
+  crucialChip: CrucialChipSelection;
+  additiveChip: AdditiveChipSelection;
+  additiveRevealed: boolean;
+  additiveRevealReason: string | null;
+  scoreBonusMultiplier: number;
+  ratingDelta: number | null;
+  ratingAfter: number | null;
+};
+
+export type BattleScoreBreakdown = {
+  problemKey: string;
+  slot: BattleDifficulty;
+  score: number;
+  wrongAttempts: number;
+  acceptedMinute: number | null;
+  potentialScoreNow: number | null;
+};
+
+export type BattleParticipantScore = {
+  userId: string;
+  totalScore: number;
+  solvedCount: number;
+  wrongAttempts: number;
+  lastAcceptedMinute: number | null;
+  bonusMultiplier: number;
+  breakdown: BattleScoreBreakdown[];
+};
+
+export type BattleRoom = {
+  id: string;
+  status: BattleStatus;
+  createdAt: string;
+  startedAt: string | null;
+  endsAt: string | null;
+  finishedAt: string | null;
+  problems: BattleProblem[];
+  participants: [BattleParticipantState, BattleParticipantState];
+  progress: BattleProblemProgress[];
+  scores: Record<string, BattleParticipantScore>;
+  winnerUserId: string | null;
+  loserUserId: string | null;
+  resultLabel: string;
+  resultReason: string | null;
+  ratingDeltasApplied: boolean;
 };
 
 export type CalendarCell = {
@@ -109,6 +233,14 @@ export type StoredUser = {
   rank: string | null;
   rating: number | null;
   titlePhoto: string | null;
+  platformRating: number;
+  initialPlatformRating: number;
+  battleWins: number;
+  battleLosses: number;
+  battleDraws: number;
+  battlesPlayed: number;
+  country: string | null;
+  continent: Continent | null;
   snapshot: Snapshot;
   createdAt: string;
 };
@@ -127,5 +259,32 @@ export type FriendCard = {
 export type BattleRecord = {
   wins: number;
   losses: number;
+  draws: number;
   total: number;
+  winRate: number;
+};
+
+export type BattleSummaryCard = {
+  id: string;
+  opponentHandle: string;
+  status: BattleStatus;
+  startedAt: string | null;
+  endsAt: string | null;
+  scoreline: string;
+  href: string;
+};
+
+export type LeaderboardEntry = {
+  rank: number;
+  handle: string;
+  platformRating: number;
+  rankTier: RankTier;
+  country: string | null;
+  continent: Continent | null;
+  countryCode: string | null;
+  battlesPlayed: number;
+  wins: number;
+  losses: number;
+  draws: number;
+  winRate: number;
 };

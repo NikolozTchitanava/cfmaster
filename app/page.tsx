@@ -2,63 +2,45 @@ import Link from "next/link";
 
 import { FlashNotice } from "@/components/FlashNotice";
 import { Heatmap } from "@/components/Heatmap";
+import { HomeAccountSection } from "@/components/HomeAccountSection";
 import { RatingSparkline } from "@/components/RatingSparkline";
 import { buildSnapshotSummary } from "@/lib/cfmasters";
 import { getHomePreviewSnapshot } from "@/lib/demo-preview";
-import { getCurrentUser } from "@/lib/session";
 import { buildProfileUrl } from "@/lib/utils";
 
-type HomePageProps = {
-  searchParams?: Promise<Record<string, string | string[] | undefined>>;
-};
-
-export default async function HomePage({ searchParams }: HomePageProps) {
-  const [resolvedSearchParams, previewSnapshot, user] = await Promise.all([
-    searchParams ?? Promise.resolve({}),
-    getHomePreviewSnapshot(),
-    getCurrentUser()
-  ]);
+export default async function HomePage() {
+  const previewSnapshot = await getHomePreviewSnapshot();
   const preview = buildSnapshotSummary(previewSnapshot);
 
   return (
     <main className="page-shell">
-      <FlashNotice searchParams={resolvedSearchParams} />
+      <FlashNotice />
 
       <section className="hero-grid hero-home card">
         <div className="hero-copy">
           <p className="eyebrow">Explore Codeforces through handles</p>
           <h1>cfmasters turns raw CF history into one simple training and friends dashboard.</h1>
           <p className="lead">
-            The home page explains the website, the profile page mixes Codeforces and cfmasters stats, the friends page keeps quick summaries one click away, and the battle page is reserved for what comes next.
+            Track your Codeforces rhythm, challenge other members to transparent 1v1 battles, and follow the live platform ladder without leaving one app.
           </p>
 
           <div className="pill-row">
             <span className="pill">3 daily suggested tasks</span>
             <span className="pill">Adjustable practice focus</span>
             <span className="pill">Friends handle summaries</span>
-            <span className="pill">Vercel-ready full stack</span>
+            <span className="pill">Live 1v1 battles + leaderboards</span>
           </div>
 
           <div className="hero-actions">
-            {user ? (
-              <>
-                <Link href="/profile" className="button button-primary">
-                  Open your profile
-                </Link>
-                <Link href="/friends" className="button button-secondary">
-                  Open friends
-                </Link>
-              </>
-            ) : (
-              <>
-                <a href="#auth" className="button button-primary">
-                  Login / signup
-                </a>
-                <Link href="/battle" className="button button-secondary">
-                  Battle preview
-                </Link>
-              </>
-            )}
+            <a href="#auth" className="button button-primary">
+              Login / signup
+            </a>
+            <Link href="/battle" className="button button-secondary">
+              Enter battle lobby
+            </Link>
+            <Link href="/leaderboards" className="button button-secondary">
+              Open leaderboards
+            </Link>
           </div>
         </div>
 
@@ -77,7 +59,11 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           </article>
           <article className="mini-card">
             <span className="eyebrow">Battle page</span>
-            <p>Kept intentionally simple for now with a clear “coming soon” placeholder.</p>
+            <p>Live 60-minute duels with rating-aware problem picks, visible crucial chips, and transparent Codeforces-style scoring.</p>
+          </article>
+          <article className="mini-card">
+            <span className="eyebrow">Leaderboards</span>
+            <p>Global platform rating ladder with region filters, country flags, and prestige-focused rank tiers.</p>
           </article>
         </div>
       </section>
@@ -140,64 +126,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
         </article>
       </section>
 
-      {!user ? (
-        <section id="auth" className="auth-grid">
-          <article className="card auth-card">
-            <div className="section-heading">
-              <div>
-                <p className="eyebrow">Create account</p>
-                <h2>Sign up with your handle</h2>
-              </div>
-            </div>
-
-            <form action="/auth/signup" method="post" className="stack-form">
-              <label>
-                <span>Codeforces handle</span>
-                <input type="text" name="handle" placeholder="tourist" required />
-              </label>
-              <label>
-                <span>Email</span>
-                <input type="email" name="email" placeholder="you@example.com" required />
-              </label>
-              <label>
-                <span>Password</span>
-                <input type="password" name="password" placeholder="At least 6 characters" required minLength={6} />
-              </label>
-              <button type="submit" className="button button-primary wide-button">
-                Create account
-              </button>
-            </form>
-          </article>
-
-          <article className="card auth-card">
-            <div className="section-heading">
-              <div>
-                <p className="eyebrow">Welcome back</p>
-                <h2>Log in to continue</h2>
-              </div>
-            </div>
-
-            <form action="/auth/login" method="post" className="stack-form">
-              <label>
-                <span>Email or handle</span>
-                <input type="text" name="identity" placeholder="you@example.com or tourist" required />
-              </label>
-              <label>
-                <span>Password</span>
-                <input type="password" name="password" placeholder="Your password" required />
-              </label>
-              <button type="submit" className="button button-secondary wide-button">
-                Log in
-              </button>
-            </form>
-          </article>
-        </section>
-      ) : (
-        <section className="card status-strip">
-          <p className="eyebrow">You’re already in</p>
-          <h2>@{user.handle} can jump straight back into profile, friends, or the battle teaser.</h2>
-        </section>
-      )}
+      <HomeAccountSection />
     </main>
   );
 }

@@ -9,12 +9,13 @@ type FriendsPageProps = {
 };
 
 export default async function FriendsPage({ searchParams }: FriendsPageProps) {
-  const [resolvedSearchParams, user] = await Promise.all([searchParams ?? Promise.resolve({}), requireCurrentUser()]);
+  await searchParams;
+  const user = await requireCurrentUser();
   const friends = await getFriendsForUser(user.id);
 
   return (
     <main className="page-shell">
-      <FlashNotice searchParams={resolvedSearchParams} />
+      <FlashNotice />
 
       <section className="hero-grid card hero-home">
         <div className="hero-copy">

@@ -1,12 +1,13 @@
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { NextResponse } from "next/server";
+import { cache } from "react";
 
 import { MissingDatabaseConfigError } from "@/lib/db";
 import { getSessionUser } from "@/lib/store";
 import { SESSION_COOKIE_NAME, withMessage } from "@/lib/utils";
 
-export async function getCurrentUser() {
+export const getCurrentUser = cache(async () => {
   try {
     const cookieStore = await cookies();
     const token = cookieStore.get(SESSION_COOKIE_NAME)?.value;
@@ -22,7 +23,7 @@ export async function getCurrentUser() {
 
     throw error;
   }
-}
+});
 
 export async function requireCurrentUser() {
   const user = await getCurrentUser();

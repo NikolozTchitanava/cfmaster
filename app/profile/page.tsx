@@ -3,8 +3,10 @@ import Link from "next/link";
 import { FlashNotice } from "@/components/FlashNotice";
 import { Heatmap } from "@/components/Heatmap";
 import { RatingSparkline } from "@/components/RatingSparkline";
+import { getRankTier } from "@/lib/battle";
 import { buildSnapshotSummary, getDailySuggestions } from "@/lib/cfmasters";
-import { getBattleRecord, getUserById } from "@/lib/store";
+import { getCountryOptions } from "@/lib/geo";
+import { getBattleRecord } from "@/lib/store";
 import { requireCurrentUser } from "@/lib/session";
 import { buildProfileUrl, FOCUS_HINTS } from "@/lib/utils";
 import type { Focus } from "@/lib/types";
@@ -14,10 +16,12 @@ type ProfilePageProps = {
 };
 
 const focusOptions: Focus[] = ["warmup", "steady", "stretch"];
+const countryOptions = getCountryOptions();
 
 export default async function ProfilePage({ searchParams }: ProfilePageProps) {
-  const [resolvedSearchParams, sessionUser] = await Promise.all([searchParams ?? Promise.resolve({}), requireCurrentUser()]);
-  const user = (await getUserById(sessionUser.id)) ?? sessionUser;
+  await searchParams;
+  const sessionUser = await requireCurrentUser();
+  const user = sessionUser;
   const [{ calendar, recentDays, statCards, summary }, suggestions, battleRecord] = await Promise.all([
     Promise.resolve(buildSnapshotSummary(user.snapshot)),
     getDailySuggestions(user.snapshot, user.id, user.focus),
@@ -26,7 +30,7 @@ export default async function ProfilePage({ searchParams }: ProfilePageProps) {
 
   return (
     <main className="page-shell">
-      <FlashNotice searchParams={resolvedSearchParams} />
+      <FlashNotice />
 
       <section className="hero-grid card">
         <div className="hero-copy">
@@ -59,10 +63,27 @@ export default async function ProfilePage({ searchParams }: ProfilePageProps) {
               <p className="muted-copy">
                 {(user.snapshot.profile.rank || "Unrated") +
                   (user.snapshot.profile.maxRating ? ` • peak ${user.snapshot.profile.maxRating}` : "") +
-                  (user.snapshot.profile.country ? ` • ${user.snapshot.profile.country}` : "")}
+                  (user.country ? ` • ${user.country}` : "")}
               </p>
             </div>
           </article>
+
+          <form action="/profile/country" method="post" className="stack-form battle-country-form">
+            <label>
+              <span>Country</span>
+              <select name="country" defaultValue={user.country ?? ""}>
+                <option value="">Set country</option>
+                {countryOptions.map((country) => (
+                  <option key={country} value={country}>
+                    {country}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <button type="submit" className="button button-secondary">
+              Save country
+            </button>
+          </form>
 
           <div className="hero-actions">
             <form action="/profile/sync" method="post">
@@ -125,6 +146,12 @@ export default async function ProfilePage({ searchParams }: ProfilePageProps) {
               <strong>{suggestions.streak} days</strong>
             </article>
             <article className="stat-card">
+              <span>Platform rating</span>
+              <strong>
+                {user.platformRating} • {getRankTier(user.platformRating)}
+              </strong>
+            </article>
+            <article className="stat-card">
               <span>Today&apos;s trio</span>
               <strong>{suggestions.todayComplete ? "Done" : "In progress"}</strong>
             </article>
@@ -135,8 +162,12 @@ export default async function ProfilePage({ searchParams }: ProfilePageProps) {
             <article className="stat-card">
               <span>Battle record</span>
               <strong>
-                {battleRecord.wins}-{battleRecord.losses}
+                {battleRecord.wins}-{battleRecord.losses}-{battleRecord.draws}
               </strong>
+            </article>
+            <article className="stat-card">
+              <span>Winrate</span>
+              <strong>{battleRecord.winRate}%</strong>
             </article>
           </div>
 

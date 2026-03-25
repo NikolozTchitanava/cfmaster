@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { IBM_Plex_Mono, Sora } from "next/font/google";
 
 import { SiteHeader } from "@/components/SiteHeader";
-import { getCurrentUser } from "@/lib/session";
 
 import "./globals.css";
 
@@ -23,13 +22,11 @@ export const metadata: Metadata = {
   description: "Track Codeforces activity, daily practice streaks, and friend summaries in one Vercel-ready app."
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const user = await getCurrentUser();
-
   return (
     <html lang="en">
       <body className={`${sora.variable} ${plexMono.variable}`}>
@@ -37,7 +34,7 @@ export default async function RootLayout({
         <div className="page-glow page-glow-left" />
         <div className="page-glow page-glow-right" />
         <div className="page-frame">
-          <SiteHeader user={user} />
+          <SiteHeader />
           {children}
         </div>
       </body>

@@ -1,8 +1,10 @@
 import { randomUUID } from "node:crypto";
 
+import { getInitialPlatformRating } from "@/lib/battle";
 import type { BattleRecord, Focus, FriendCard, Snapshot, StoredUser } from "@/lib/types";
 import { ensureDatabase, getSql, shouldUseLocalStore } from "@/lib/db";
 import { fetchCodeforcesSnapshot } from "@/lib/codeforces";
+import { resolveCountryMetadata } from "@/lib/geo";
 import {
   addLocalFriendOrTrackedHandle,
   createLocalSession,
@@ -17,6 +19,7 @@ import {
   getLocalUserById,
   getLocalUserWithPasswordByIdentity,
   refreshLocalFriendSnapshot,
+  updateLocalUserCountry,
   updateLocalUserFocus,
   updateLocalUserSnapshot,
   upsertLocalHandleCache
@@ -41,6 +44,13 @@ type UserRow = {
   focus: Focus;
   rank: string | null;
   rating: number | null;
+  platform_rating: number | null;
+  initial_platform_rating: number | null;
+  battle_wins: number | null;
+  battle_losses: number | null;
+  battle_draws: number | null;
+  battles_played: number | null;
+  country: string | null;
   title_photo: string | null;
   profile_json: unknown;
   solved_json: unknown;
@@ -72,6 +82,9 @@ function parseSnapshot(row: Pick<UserRow, "profile_json" | "solved_json" | "rati
 }
 
 function parseUser(row: UserRow): StoredUser {
+  const resolvedCountry = resolveCountryMetadata(coerceText(row.country) || coerceText(coerceJson<Record<string, unknown>>(row.profile_json, {}).country));
+  const initialPlatformRating = coerceNumber(row.initial_platform_rating) ?? getInitialPlatformRating(coerceNumber(row.rating));
+
   return {
     id: row.id,
     email: row.email,
@@ -79,6 +92,14 @@ function parseUser(row: UserRow): StoredUser {
     focus: row.focus ?? "steady",
     rank: row.rank,
     rating: coerceNumber(row.rating),
+    platformRating: coerceNumber(row.platform_rating) ?? initialPlatformRating,
+    initialPlatformRating,
+    battleWins: coerceNumber(row.battle_wins) ?? 0,
+    battleLosses: coerceNumber(row.battle_losses) ?? 0,
+    battleDraws: coerceNumber(row.battle_draws) ?? 0,
+    battlesPlayed: coerceNumber(row.battles_played) ?? 0,
+    country: resolvedCountry.country,
+    continent: resolvedCountry.continent,
     titlePhoto: row.title_photo,
     snapshot: parseSnapshot(row),
     createdAt: new Date(row.created_at).toISOString()
@@ -179,6 +200,8 @@ export async function createUserAccount(input: {
 
   const snapshot = await fetchCodeforcesSnapshot(input.handle);
   const id = randomUUID();
+  const initialPlatformRating = getInitialPlatformRating(snapshot.profile.rating ?? null);
+  const resolvedCountry = resolveCountryMetadata(snapshot.profile.country ?? null);
 
   await sql`
     INSERT INTO users (
@@ -191,6 +214,9 @@ export async function createUserAccount(input: {
       focus,
       rank,
       rating,
+      platform_rating,
+      initial_platform_rating,
+      country,
       title_photo,
       profile_json,
       solved_json,
@@ -208,6 +234,9 @@ export async function createUserAccount(input: {
       ${"steady"},
       ${snapshot.profile.rank ?? null},
       ${snapshot.profile.rating ?? null},
+      ${initialPlatformRating},
+      ${initialPlatformRating},
+      ${resolvedCountry.country},
       ${snapshot.profile.titlePhoto ?? null},
       ${JSON.stringify(snapshot.profile)}::jsonb,
       ${JSON.stringify(snapshot.solved)}::jsonb,
@@ -245,6 +274,7 @@ export async function updateUserSnapshot(userId: string): Promise<StoredUser> {
         handle_key = ${handleKey(snapshot.profile.handle)},
         rank = ${snapshot.profile.rank ?? null},
         rating = ${snapshot.profile.rating ?? null},
+        country = COALESCE(country, ${resolveCountryMetadata(snapshot.profile.country).country ?? null}),
         title_photo = ${snapshot.profile.titlePhoto ?? null},
         profile_json = ${JSON.stringify(snapshot.profile)}::jsonb,
         solved_json = ${JSON.stringify(snapshot.solved)}::jsonb,
@@ -272,6 +302,21 @@ export async function updateUserFocus(userId: string, focus: Focus): Promise<voi
   await sql`
     UPDATE users
     SET focus = ${focus},
+        updated_at = ${nowIso()}
+    WHERE id = ${userId}
+  `;
+}
+
+export async function updateUserCountry(userId: string, country: string | null): Promise<void> {
+  if (shouldUseLocalStore()) {
+    return updateLocalUserCountry(userId, country);
+  }
+
+  await ensureDatabase();
+  const sql = getSql();
+  await sql`
+    UPDATE users
+    SET country = ${country},
         updated_at = ${nowIso()}
     WHERE id = ${userId}
   `;
@@ -509,21 +554,33 @@ export async function getBattleRecord(userId: string): Promise<BattleRecord> {
 
   await ensureDatabase();
   const sql = getSql();
-  const rows = await sql<Array<{ wins: number; losses: number }>>`
+  const rows = await sql<Array<{ wins: number; losses: number; draws: number }>>`
     SELECT
       COUNT(*) FILTER (WHERE winner_user_id = ${userId})::int AS wins,
-      COUNT(*) FILTER (WHERE loser_user_id = ${userId})::int AS losses
+      COUNT(*) FILTER (WHERE loser_user_id = ${userId})::int AS losses,
+      COUNT(*) FILTER (
+        WHERE status = 'finished'
+          AND winner_user_id IS NULL
+          AND loser_user_id IS NULL
+          AND (player_one_user_id = ${userId} OR player_two_user_id = ${userId})
+      )::int AS draws
     FROM battles
     WHERE winner_user_id = ${userId}
        OR loser_user_id = ${userId}
+       OR player_one_user_id = ${userId}
+       OR player_two_user_id = ${userId}
   `;
 
   const wins = rows[0]?.wins ?? 0;
   const losses = rows[0]?.losses ?? 0;
+  const draws = rows[0]?.draws ?? 0;
+  const total = wins + losses + draws;
   return {
     wins,
     losses,
-    total: wins + losses
+    draws,
+    total,
+    winRate: total ? Math.round((wins / total) * 100) : 0
   };
 }
 
