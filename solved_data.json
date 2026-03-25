@@ -1,0 +1,4636 @@
+{
+  "2023-10-22": [
+    {
+      "name": "Simple Design",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1884/problem/A"
+    }
+  ],
+  "2023-10-26": [
+    {
+      "name": "Watermelon",
+      "rating": 800,
+      "submissions": 8,
+      "link": "https://codeforces.com/contest/4/problem/A"
+    },
+    {
+      "name": "Way Too Long Words",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/71/problem/A"
+    }
+  ],
+  "2023-10-31": [
+    {
+      "name": "Maximum profit",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/104745/problem/C"
+    },
+    {
+      "name": "Operation",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/104745/problem/B"
+    },
+    {
+      "name": "Saving the cinema",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/104745/problem/A"
+    }
+  ],
+  "2023-11-03": [
+    {
+      "name": "Treasure Chest",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1895/problem/A"
+    }
+  ],
+  "2023-11-17": [
+    {
+      "name": "Yarik and Array",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1899/problem/C"
+    }
+  ],
+  "2023-11-18": [
+    {
+      "name": "XOR Construction",
+      "rating": 1900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1895/problem/D"
+    }
+  ],
+  "2023-11-21": [
+    {
+      "name": "Chemistry",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1883/problem/B"
+    },
+    {
+      "name": "Doremy's Paint 3",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1890/problem/A"
+    },
+    {
+      "name": "Morning",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1883/problem/A"
+    }
+  ],
+  "2023-11-24": [
+    {
+      "name": "Chip and Ribbon",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1901/problem/B"
+    },
+    {
+      "name": "Line Trip",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1901/problem/A"
+    }
+  ],
+  "2023-11-25": [
+    {
+      "name": "Matching Arrays",
+      "rating": 1400,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1896/problem/C"
+    },
+    {
+      "name": "Jagged Swaps",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1896/problem/A"
+    }
+  ],
+  "2023-11-29": [
+    {
+      "name": "Beautiful Matrix",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/263/problem/A"
+    },
+    {
+      "name": "Bit++",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/282/problem/A"
+    },
+    {
+      "name": "Domino piling",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/50/problem/A"
+    },
+    {
+      "name": "Game with Integers",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1899/problem/A"
+    },
+    {
+      "name": "Next Round",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/158/problem/A"
+    },
+    {
+      "name": "Team",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/231/problem/A"
+    }
+  ],
+  "2023-11-30": [
+    {
+      "name": "Theofanis' Nightmare",
+      "rating": 1400,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1903/problem/C"
+    }
+  ],
+  "2023-12-02": [
+    {
+      "name": "Arrival of the General",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/144/problem/A"
+    },
+    {
+      "name": "Bear and Big Brother",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/791/problem/A"
+    },
+    {
+      "name": "Boy or Girl",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/236/problem/A"
+    },
+    {
+      "name": "Helpful Maths",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/339/problem/A"
+    },
+    {
+      "name": "Petya and Strings",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/112/problem/A"
+    },
+    {
+      "name": "Stones on the Table",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/266/problem/A"
+    },
+    {
+      "name": "Word Capitalization",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/281/problem/A"
+    }
+  ],
+  "2023-12-03": [
+    {
+      "name": "Getting Points",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1902/problem/B"
+    },
+    {
+      "name": "Anton and Danik",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/734/problem/A"
+    },
+    {
+      "name": "Binary Imbalance",
+      "rating": 800,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/1902/problem/A"
+    },
+    {
+      "name": "Elephant",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/617/problem/A"
+    },
+    {
+      "name": "Nearly Lucky Number",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/110/problem/A"
+    },
+    {
+      "name": "Soldier and Bananas",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/546/problem/A"
+    },
+    {
+      "name": "Translation",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/41/problem/A"
+    },
+    {
+      "name": "Word",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/59/problem/A"
+    },
+    {
+      "name": "Wrong Subtraction",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/977/problem/A"
+    }
+  ],
+  "2023-12-04": [
+    {
+      "name": "Tram",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/116/problem/A"
+    }
+  ],
+  "2023-12-05": [
+    {
+      "name": "Vanya and Fence",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/677/problem/A"
+    }
+  ],
+  "2023-12-06": [
+    {
+      "name": "Anton and Letters",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/443/problem/A"
+    },
+    {
+      "name": "Beautiful Year",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/271/problem/A"
+    },
+    {
+      "name": "Calculating Function",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/486/problem/A"
+    },
+    {
+      "name": "Divisibility Problem",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1328/problem/A"
+    },
+    {
+      "name": "Drinks",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/200/problem/B"
+    },
+    {
+      "name": "George and Accommodation",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/467/problem/A"
+    },
+    {
+      "name": "Hit the Lottery",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/996/problem/A"
+    },
+    {
+      "name": "Hulk",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/705/problem/A"
+    },
+    {
+      "name": "I Wanna Be the Guy",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/469/problem/A"
+    },
+    {
+      "name": "In Search of an Easy Problem",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1030/problem/A"
+    },
+    {
+      "name": "Insomnia cure",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/148/problem/A"
+    },
+    {
+      "name": "Is your horseshoe on the other hoof?",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/228/problem/A"
+    },
+    {
+      "name": "Magnets",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/344/problem/A"
+    },
+    {
+      "name": "Pangram",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/520/problem/A"
+    },
+    {
+      "name": "Presents",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/136/problem/A"
+    },
+    {
+      "name": "Queue at the School",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/266/problem/B"
+    },
+    {
+      "name": "Rook",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1907/problem/A"
+    },
+    {
+      "name": "Ultra-Fast Mathematician",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/61/problem/A"
+    }
+  ],
+  "2023-12-07": [
+    {
+      "name": "Amusing Joke",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/141/problem/A"
+    },
+    {
+      "name": "Anton and Polyhedrons",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/785/problem/A"
+    },
+    {
+      "name": "Buy a Shovel",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/732/problem/A"
+    },
+    {
+      "name": "Candies and Two Sisters",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1335/problem/A"
+    },
+    {
+      "name": "Fox And Snake",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/510/problem/A"
+    },
+    {
+      "name": "Games",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/268/problem/A"
+    },
+    {
+      "name": "I_love_\\%username\\%",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/155/problem/A"
+    },
+    {
+      "name": "New Year and Hurry",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/750/problem/A"
+    },
+    {
+      "name": "Police Recruits",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/427/problem/A"
+    },
+    {
+      "name": "Restoring Three Numbers",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1154/problem/A"
+    },
+    {
+      "name": "Soft Drinking",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/151/problem/A"
+    },
+    {
+      "name": "Sum of Round Numbers",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1352/problem/A"
+    },
+    {
+      "name": "The New Year: Meeting Friends",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/723/problem/A"
+    },
+    {
+      "name": "Vasya the Hipster",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/581/problem/A"
+    }
+  ],
+  "2023-12-08": [
+    {
+      "name": "Again Twenty Five!",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/630/problem/A"
+    },
+    {
+      "name": "Borze",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/32/problem/B"
+    },
+    {
+      "name": "Choosing Teams",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/432/problem/A"
+    },
+    {
+      "name": "Design Tutorial: Learn from Math",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/472/problem/A"
+    },
+    {
+      "name": "Dislike of Threes",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1560/problem/A"
+    },
+    {
+      "name": "Holiday Of Equality",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/758/problem/A"
+    },
+    {
+      "name": "Lucky?",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1676/problem/A"
+    },
+    {
+      "name": "Marathon",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1692/problem/A"
+    },
+    {
+      "name": "Remove Smallest",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1399/problem/A"
+    },
+    {
+      "name": "Sereja and Dima",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/381/problem/A"
+    },
+    {
+      "name": "Short Substrings",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1367/problem/A"
+    },
+    {
+      "name": "Spy Detected!",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1512/problem/A"
+    },
+    {
+      "name": "Sum",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1742/problem/A"
+    },
+    {
+      "name": "Team Olympiad",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/490/problem/A"
+    },
+    {
+      "name": "YES or YES?",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1703/problem/A"
+    },
+    {
+      "name": "Yet Another Two Integers Problem",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1409/problem/A"
+    }
+  ],
+  "2023-12-09": [
+    {
+      "name": "Balanced Array",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1343/problem/B"
+    },
+    {
+      "name": "Codeforces Checking",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1791/problem/A"
+    },
+    {
+      "name": "Die Roll",
+      "rating": 800,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/9/problem/A"
+    },
+    {
+      "name": "Division?",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1669/problem/A"
+    },
+    {
+      "name": "Mishka and Game",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/703/problem/A"
+    }
+  ],
+  "2023-12-10": [
+    {
+      "name": "Black Square",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/431/problem/A"
+    },
+    {
+      "name": "Medium Number",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1760/problem/A"
+    },
+    {
+      "name": "Plus or Minus",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1807/problem/A"
+    },
+    {
+      "name": "Required Remainder",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1374/problem/A"
+    }
+  ],
+  "2023-12-11": [
+    {
+      "name": "Even Array",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1367/problem/B"
+    },
+    {
+      "name": "Plus One on the Subset",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1624/problem/A"
+    }
+  ],
+  "2023-12-12": [
+    {
+      "name": "Boring Apartments",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1433/problem/A"
+    },
+    {
+      "name": "Good Kid",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1873/problem/B"
+    },
+    {
+      "name": "Short Sort",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1873/problem/A"
+    }
+  ],
+  "2023-12-13": [
+    {
+      "name": "Bachgold Problem",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/749/problem/A"
+    },
+    {
+      "name": "Do Not Be Distracted!",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1520/problem/A"
+    },
+    {
+      "name": "Fair Division",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1472/problem/B"
+    },
+    {
+      "name": "Honest Coach",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1360/problem/B"
+    },
+    {
+      "name": "Maximum GCD",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1370/problem/A"
+    },
+    {
+      "name": "Minimal Square",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1360/problem/A"
+    },
+    {
+      "name": "Panoramix's Prediction",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/80/problem/A"
+    },
+    {
+      "name": "Polycarp and Coins",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1551/problem/A"
+    },
+    {
+      "name": "Square String?",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1619/problem/A"
+    },
+    {
+      "name": "Two Arrays And Swaps",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1353/problem/B"
+    },
+    {
+      "name": "Vanya and Cubes",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/492/problem/A"
+    }
+  ],
+  "2023-12-14": [
+    {
+      "name": "Brain's Photos",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/707/problem/A"
+    },
+    {
+      "name": "Fair Playoff",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1535/problem/A"
+    },
+    {
+      "name": "Floor Number",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1426/problem/A"
+    },
+    {
+      "name": "Magical Sticks",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1371/problem/A"
+    },
+    {
+      "name": "Minutes Before the New Year",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1283/problem/A"
+    },
+    {
+      "name": "Spell Check",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1722/problem/A"
+    },
+    {
+      "name": "To My Critics",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1850/problem/A"
+    }
+  ],
+  "2023-12-15": [
+    {
+      "name": "Even Odds",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/318/problem/A"
+    },
+    {
+      "name": "Football",
+      "rating": 900,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/96/problem/A"
+    },
+    {
+      "name": "Twins",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/160/problem/A"
+    }
+  ],
+  "2023-12-16": [
+    {
+      "name": "Kefa and First Steps",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/580/problem/A"
+    },
+    {
+      "name": "Constructive Problems",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1905/problem/A"
+    }
+  ],
+  "2023-12-17": [
+    {
+      "name": "Dubstep",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/208/problem/A"
+    }
+  ],
+  "2023-12-18": [
+    {
+      "name": "Game With Sticks",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/451/problem/A"
+    },
+    {
+      "name": "Puzzles",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/337/problem/A"
+    }
+  ],
+  "2023-12-19": [
+    {
+      "name": "Ilya and Bank Account",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/313/problem/A"
+    },
+    {
+      "name": "Odd Divisor",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1475/problem/A"
+    },
+    {
+      "name": "Sale",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/34/problem/B"
+    }
+  ],
+  "2023-12-20": [
+    {
+      "name": "New Year's Number",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1475/problem/B"
+    }
+  ],
+  "2023-12-21": [
+    {
+      "name": "Multiply by 2, divide by 6",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1374/problem/B"
+    }
+  ],
+  "2023-12-22": [
+    {
+      "name": "Vasya and Socks",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/460/problem/A"
+    }
+  ],
+  "2023-12-23": [
+    {
+      "name": "Blank Space",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1829/problem/B"
+    },
+    {
+      "name": "Love Story",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1829/problem/A"
+    },
+    {
+      "name": "Mr. Perfectly Fine",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1829/problem/C"
+    }
+  ],
+  "2023-12-24": [
+    {
+      "name": "Business trip",
+      "rating": 900,
+      "submissions": 5,
+      "link": "https://codeforces.com/contest/149/problem/A"
+    },
+    {
+      "name": "Kana and Dragon Quest game",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1337/problem/B"
+    }
+  ],
+  "2023-12-25": [
+    {
+      "name": "01 Game",
+      "rating": 900,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1373/problem/B"
+    },
+    {
+      "name": "Magic Numbers",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/320/problem/A"
+    }
+  ],
+  "2023-12-26": [
+    {
+      "name": "Unique Number",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1462/problem/C"
+    }
+  ],
+  "2023-12-27": [
+    {
+      "name": "Lineland Mail",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/567/problem/A"
+    }
+  ],
+  "2023-12-28": [
+    {
+      "name": "Food Buying",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1296/problem/B"
+    }
+  ],
+  "2023-12-29": [
+    {
+      "name": "Juicer",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/709/problem/A"
+    },
+    {
+      "name": "Can I Square?",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1915/problem/C"
+    },
+    {
+      "name": "Collecting Coins",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1294/problem/A"
+    },
+    {
+      "name": "Not Quite Latin Square",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1915/problem/B"
+    },
+    {
+      "name": "Odd One Out",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1915/problem/A"
+    }
+  ],
+  "2023-12-30": [
+    {
+      "name": "Everyone Loves to Sleep",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1714/problem/A"
+    }
+  ],
+  "2024-01-01": [
+    {
+      "name": "Bad Boy",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1537/problem/B"
+    }
+  ],
+  "2024-01-02": [
+    {
+      "name": "Raising Bacteria",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/579/problem/A"
+    },
+    {
+      "name": "Almost Prime",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/26/problem/A"
+    },
+    {
+      "name": "PizzaForces",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1555/problem/A"
+    }
+  ],
+  "2024-01-03": [
+    {
+      "name": "Lunch Rush",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/276/problem/A"
+    }
+  ],
+  "2024-01-04": [
+    {
+      "name": "Odd Queries",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1807/problem/D"
+    },
+    {
+      "name": "Orac and Factors",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1350/problem/A"
+    }
+  ],
+  "2024-01-06": [
+    {
+      "name": "Decoding",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/746/problem/B"
+    }
+  ],
+  "2024-01-07": [
+    {
+      "name": "Equal Candies",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1676/problem/B"
+    },
+    {
+      "name": "Gifts Fixing",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1399/problem/B"
+    },
+    {
+      "name": "ICPC Balloons",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1703/problem/B"
+    },
+    {
+      "name": "Plus-Minus Split",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1919/problem/B"
+    },
+    {
+      "name": "Wallet Exchange",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1919/problem/A"
+    }
+  ],
+  "2024-01-08": [
+    {
+      "name": "Increasing",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1742/problem/B"
+    },
+    {
+      "name": "Mahmoud and Ehab and the even-odd game",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/959/problem/A"
+    },
+    {
+      "name": "Ordinary Numbers",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1520/problem/B"
+    }
+  ],
+  "2024-01-09": [
+    {
+      "name": "A+B?",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1772/problem/A"
+    },
+    {
+      "name": "Problemsolving Log",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1914/problem/A"
+    }
+  ],
+  "2024-01-11": [
+    {
+      "name": "Colourblindness",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1722/problem/B"
+    }
+  ],
+  "2024-01-12": [
+    {
+      "name": "Grab the Candies",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1807/problem/B"
+    },
+    {
+      "name": "Two Elevators",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1729/problem/A"
+    }
+  ],
+  "2024-01-13": [
+    {
+      "name": "Atilla's Favorite Problem",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1760/problem/B"
+    }
+  ],
+  "2024-01-14": [
+    {
+      "name": "Phoenix and Balance",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1348/problem/A"
+    }
+  ],
+  "2024-01-15": [
+    {
+      "name": "Preparing for the Contest",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1914/problem/B"
+    }
+  ],
+  "2024-01-16": [
+    {
+      "name": "Theatre Square",
+      "rating": 1000,
+      "submissions": 5,
+      "link": "https://codeforces.com/contest/1/problem/A"
+    },
+    {
+      "name": "Arithmetic Array",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1537/problem/A"
+    },
+    {
+      "name": "C+=",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1368/problem/A"
+    }
+  ],
+  "2024-01-17": [
+    {
+      "name": "String Task",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/118/problem/A"
+    }
+  ],
+  "2024-01-18": [
+    {
+      "name": "Rating Increase",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1913/problem/A"
+    }
+  ],
+  "2024-01-19": [
+    {
+      "name": "FashionabLee",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1369/problem/A"
+    }
+  ],
+  "2024-01-20": [
+    {
+      "name": "Chat room",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/58/problem/A"
+    },
+    {
+      "name": "Expression",
+      "rating": 1000,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/479/problem/A"
+    },
+    {
+      "name": "Lucky Division",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/122/problem/A"
+    },
+    {
+      "name": "Young Physicist",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/69/problem/A"
+    }
+  ],
+  "2024-01-22": [
+    {
+      "name": "cAPS lOCK",
+      "rating": 1000,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/131/problem/A"
+    }
+  ],
+  "2024-01-23": [
+    {
+      "name": "Football",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/43/problem/A"
+    }
+  ],
+  "2024-01-24": [
+    {
+      "name": "New Year Candles",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/379/problem/A"
+    }
+  ],
+  "2024-01-25": [
+    {
+      "name": "Olesya and Rodion",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/584/problem/A"
+    }
+  ],
+  "2024-01-26": [
+    {
+      "name": "Dragons",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/230/problem/A"
+    }
+  ],
+  "2024-01-27": [
+    {
+      "name": "Dreamoon and Stairs",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/476/problem/A"
+    }
+  ],
+  "2024-01-28": [
+    {
+      "name": "Road To Zero",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1342/problem/A"
+    }
+  ],
+  "2024-01-29": [
+    {
+      "name": "Arpa’s hard exam and Mehrdad’s naive cheat",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/742/problem/A"
+    }
+  ],
+  "2024-01-30": [
+    {
+      "name": "Three Pairwise Maximums",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1385/problem/A"
+    }
+  ],
+  "2024-01-31": [
+    {
+      "name": "Gennady and a Card Game",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1097/problem/A"
+    }
+  ],
+  "2024-02-01": [
+    {
+      "name": "Vanya and Lanterns",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/492/problem/B"
+    }
+  ],
+  "2024-02-02": [
+    {
+      "name": "Interesting drink",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/706/problem/B"
+    }
+  ],
+  "2024-02-03": [
+    {
+      "name": "Make AP",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1624/problem/B"
+    }
+  ],
+  "2024-02-04": [
+    {
+      "name": "Gold Rush",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1829/problem/D"
+    }
+  ],
+  "2024-02-05": [
+    {
+      "name": "Quests",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1914/problem/C"
+    }
+  ],
+  "2024-02-06": [
+    {
+      "name": "Find the Different Ones!",
+      "rating": 1300,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1927/problem/D"
+    },
+    {
+      "name": "Choose the Different Ones!",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1927/problem/C"
+    },
+    {
+      "name": "Following the String",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1927/problem/B"
+    },
+    {
+      "name": "Make it White",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1927/problem/A"
+    },
+    {
+      "name": "Square",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1921/problem/A"
+    }
+  ],
+  "2024-02-07": [
+    {
+      "name": "Array with Odd Sum",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1296/problem/A"
+    }
+  ],
+  "2024-02-08": [
+    {
+      "name": "Board Moves",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1353/problem/C"
+    },
+    {
+      "name": "The number of positions",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/124/problem/A"
+    }
+  ],
+  "2024-02-09": [
+    {
+      "name": "Chips Moving",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1213/problem/A"
+    },
+    {
+      "name": "Tricky Sum",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/598/problem/A"
+    }
+  ],
+  "2024-02-10": [
+    {
+      "name": "Payment Without Change",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1256/problem/A"
+    }
+  ],
+  "2024-02-13": [
+    {
+      "name": "Buying Torches",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1418/problem/A"
+    }
+  ],
+  "2024-02-14": [
+    {
+      "name": "Cheap Travel",
+      "rating": 1200,
+      "submissions": 9,
+      "link": "https://codeforces.com/contest/466/problem/A"
+    },
+    {
+      "name": "Game 23",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1141/problem/A"
+    }
+  ],
+  "2024-02-15": [
+    {
+      "name": "Free Cash",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/237/problem/A"
+    }
+  ],
+  "2024-02-16": [
+    {
+      "name": "All Distinct",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1692/problem/B"
+    }
+  ],
+  "2024-02-17": [
+    {
+      "name": "Casimir's String Solitaire",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1579/problem/A"
+    }
+  ],
+  "2024-02-18": [
+    {
+      "name": "Case of the Zeros and Ones",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/556/problem/A"
+    }
+  ],
+  "2024-02-19": [
+    {
+      "name": "Vlad and a Sum of Sum of Digits",
+      "rating": 1200,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1926/problem/C"
+    },
+    {
+      "name": "Buttons",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/268/problem/B"
+    },
+    {
+      "name": "Vlad and Shapes",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1926/problem/B"
+    },
+    {
+      "name": "Vlad and the Best of Five",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1926/problem/A"
+    }
+  ],
+  "2024-02-20": [
+    {
+      "name": "Following Directions",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1791/problem/B"
+    }
+  ],
+  "2024-02-21": [
+    {
+      "name": "Elections",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1593/problem/A"
+    }
+  ],
+  "2024-02-22": [
+    {
+      "name": "Buttons",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1858/problem/A"
+    }
+  ],
+  "2024-02-23": [
+    {
+      "name": "Petr and Book",
+      "rating": 1000,
+      "submissions": 7,
+      "link": "https://codeforces.com/contest/139/problem/A"
+    }
+  ],
+  "2024-02-24": [
+    {
+      "name": "Target Practice",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1873/problem/C"
+    }
+  ],
+  "2024-02-25": [
+    {
+      "name": "Div. 7",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1633/problem/A"
+    }
+  ],
+  "2024-02-26": [
+    {
+      "name": "Promo",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1697/problem/B"
+    }
+  ],
+  "2024-02-27": [
+    {
+      "name": "Turtle Tenacity: Continual Mods",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1933/problem/D"
+    },
+    {
+      "name": "Turtle Fingers: Count the Values of k",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1933/problem/C"
+    },
+    {
+      "name": "Turtle Math: Fast Three Task",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1933/problem/B"
+    },
+    {
+      "name": "Turtle Puzzle: Rearrange and Negate",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1933/problem/A"
+    }
+  ],
+  "2024-02-28": [
+    {
+      "name": "Stripes",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1742/problem/C"
+    }
+  ],
+  "2024-02-29": [
+    {
+      "name": "Balanced Round",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1850/problem/D"
+    }
+  ],
+  "2024-03-02": [
+    {
+      "name": "Too Min Too Max",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1934/problem/A"
+    }
+  ],
+  "2024-03-03": [
+    {
+      "name": "HQ9+",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/133/problem/A"
+    }
+  ],
+  "2024-03-04": [
+    {
+      "name": "Maximum Cost Deletion",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1550/problem/B"
+    }
+  ],
+  "2024-03-08": [
+    {
+      "name": "Favorite Sequence",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1462/problem/A"
+    }
+  ],
+  "2024-03-09": [
+    {
+      "name": "Prime Subtraction",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1238/problem/A"
+    }
+  ],
+  "2024-03-10": [
+    {
+      "name": "Vasilije in Cacak",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1878/problem/C"
+    }
+  ],
+  "2024-03-11": [
+    {
+      "name": "Rudolf and the Ball Game",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1941/problem/D"
+    },
+    {
+      "name": "Rudolf and 121",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1941/problem/B"
+    },
+    {
+      "name": "Rudolf and the Ugly String",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1941/problem/C"
+    },
+    {
+      "name": "Rudolf and the Ticket",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1941/problem/A"
+    }
+  ],
+  "2024-03-12": [
+    {
+      "name": "Wizard of Orz",
+      "rating": 900,
+      "submissions": 5,
+      "link": "https://codeforces.com/contest/1467/problem/A"
+    }
+  ],
+  "2024-03-14": [
+    {
+      "name": "Buying Shovels",
+      "rating": 1300,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1360/problem/D"
+    }
+  ],
+  "2024-03-15": [
+    {
+      "name": "K-th Not Divisible by n",
+      "rating": 1200,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1352/problem/C"
+    }
+  ],
+  "2024-03-17": [
+    {
+      "name": "250 Thousand Tons of TNT",
+      "rating": 1100,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1899/problem/B"
+    }
+  ],
+  "2024-03-19": [
+    {
+      "name": "Captain Flint and a Long Voyage",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1388/problem/B"
+    }
+  ],
+  "2024-03-20": [
+    {
+      "name": "Odd Grasshopper",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1607/problem/B"
+    }
+  ],
+  "2024-03-21": [
+    {
+      "name": "Candies",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1343/problem/A"
+    }
+  ],
+  "2024-03-25": [
+    {
+      "name": "Xenia and Ringroad",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/339/problem/B"
+    }
+  ],
+  "2024-03-28": [
+    {
+      "name": "Product of Binary Decimals",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1950/problem/D"
+    },
+    {
+      "name": "Clock Conversion",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1950/problem/C"
+    },
+    {
+      "name": "Stair, Peak, or Neither?",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1950/problem/A"
+    },
+    {
+      "name": "Upscaling",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1950/problem/B"
+    }
+  ],
+  "2024-06-03": [
+    {
+      "name": "Choosing Cubes",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1980/problem/B"
+    },
+    {
+      "name": "Problem Generator",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1980/problem/A"
+    }
+  ],
+  "2024-06-06": [
+    {
+      "name": "XOR Sequences",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1979/problem/B"
+    },
+    {
+      "name": "Guess the Maximum",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1979/problem/A"
+    }
+  ],
+  "2024-06-11": [
+    {
+      "name": "Manhattan Circle",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1985/problem/D"
+    },
+    {
+      "name": "Creating Words",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1985/problem/A"
+    },
+    {
+      "name": "Maximum Multiple Sum",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1985/problem/B"
+    }
+  ],
+  "2024-08-01": [
+    {
+      "name": "Prepend and Append",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1791/problem/C"
+    }
+  ],
+  "2024-08-03": [
+    {
+      "name": "Raspberries",
+      "rating": 1000,
+      "submissions": 9,
+      "link": "https://codeforces.com/contest/1883/problem/C"
+    }
+  ],
+  "2024-08-04": [
+    {
+      "name": "Goals, Goals! Everywhere",
+      "rating": "N/A",
+      "submissions": 4,
+      "link": "https://codeforces.com/gym/105264/problem/A"
+    },
+    {
+      "name": "Kaaa",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/105264/problem/M"
+    },
+    {
+      "name": "Minimum Sum",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/105264/problem/K"
+    }
+  ],
+  "2024-08-05": [
+    {
+      "name": "Question Marks",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1993/problem/A"
+    }
+  ],
+  "2024-08-19": [
+    {
+      "name": "Poisoned Dagger",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1613/problem/C"
+    },
+    {
+      "name": "K-divisible Sum",
+      "rating": 1000,
+      "submissions": 5,
+      "link": "https://codeforces.com/contest/1476/problem/A"
+    }
+  ],
+  "2024-08-20": [
+    {
+      "name": "Generate Permutation",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2001/problem/B"
+    },
+    {
+      "name": "Make All Equal",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2001/problem/A"
+    }
+  ],
+  "2024-09-09": [
+    {
+      "name": "Move Brackets",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1374/problem/C"
+    }
+  ],
+  "2024-09-11": [
+    {
+      "name": "The Legend of Freya the Frog",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2009/problem/C"
+    },
+    {
+      "name": "Lecture",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/499/problem/B"
+    },
+    {
+      "name": "Multiplication Table",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/577/problem/A"
+    },
+    {
+      "name": "New Year Transportation",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/500/problem/A"
+    },
+    {
+      "name": "Minimize!",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2009/problem/A"
+    },
+    {
+      "name": "osu!mania",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2009/problem/B"
+    }
+  ],
+  "2024-09-12": [
+    {
+      "name": "Nastia and Nearly Good Numbers",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1521/problem/A"
+    }
+  ],
+  "2024-09-13": [
+    {
+      "name": "Different String",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1971/problem/B"
+    },
+    {
+      "name": "My First Sorting Problem",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1971/problem/A"
+    }
+  ],
+  "2024-09-14": [
+    {
+      "name": "The Strict Teacher (Hard Version)",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2005/problem/B2"
+    },
+    {
+      "name": "The Strict Teacher (Easy Version)",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2005/problem/B1"
+    },
+    {
+      "name": "Simple Palindrome",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2005/problem/A"
+    },
+    {
+      "name": "Legs",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1996/problem/A"
+    },
+    {
+      "name": "Scale",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1996/problem/B"
+    }
+  ],
+  "2024-09-18": [
+    {
+      "name": "Angry Monk",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1992/problem/B"
+    },
+    {
+      "name": "Only Pluses",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1992/problem/A"
+    }
+  ],
+  "2024-09-20": [
+    {
+      "name": "Battle for Survive",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2013/problem/B"
+    },
+    {
+      "name": "Zhan's Blender",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2013/problem/A"
+    }
+  ],
+  "2024-09-23": [
+    {
+      "name": "Robin Helps",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2014/problem/A"
+    },
+    {
+      "name": "Robin Hood and the Major Oak",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2014/problem/B"
+    }
+  ],
+  "2024-09-27": [
+    {
+      "name": "Yogurt Sale",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1955/problem/A"
+    }
+  ],
+  "2024-09-29": [
+    {
+      "name": "Bitwise Balancing",
+      "rating": 1400,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2020/problem/C"
+    },
+    {
+      "name": "Find Minimum Operations",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/2020/problem/A"
+    }
+  ],
+  "2024-09-30": [
+    {
+      "name": "Brightness Begins",
+      "rating": 1200,
+      "submissions": 7,
+      "link": "https://codeforces.com/contest/2020/problem/B"
+    }
+  ],
+  "2024-10-02": [
+    {
+      "name": "Who Hates Abhishek?",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/105380/problem/A"
+    }
+  ],
+  "2024-10-03": [
+    {
+      "name": "Max Plus Size",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2019/problem/A"
+    },
+    {
+      "name": "Xor Pairs (Easy Version)",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/105380/problem/B1"
+    }
+  ],
+  "2024-10-08": [
+    {
+      "name": "Jzzhu and Children",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/450/problem/A"
+    },
+    {
+      "name": "Mahmoud and a Triangle",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/766/problem/B"
+    }
+  ],
+  "2024-10-10": [
+    {
+      "name": "A+B Again?",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1999/problem/A"
+    },
+    {
+      "name": "Array Coloring",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1857/problem/A"
+    },
+    {
+      "name": "Maximum Increase",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/702/problem/A"
+    }
+  ],
+  "2024-10-13": [
+    {
+      "name": "Fence",
+      "rating": 1100,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/363/problem/B"
+    },
+    {
+      "name": "Fair Toy Missing",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/105408/problem/F"
+    }
+  ],
+  "2024-10-24": [
+    {
+      "name": "Profitable Interest Rate",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2024/problem/A"
+    }
+  ],
+  "2024-11-27": [
+    {
+      "name": "Two Vessels",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1872/problem/A"
+    }
+  ],
+  "2024-12-18": [
+    {
+      "name": "Easy Problem",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2044/problem/A"
+    },
+    {
+      "name": "Normal Problem",
+      "rating": 800,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/2044/problem/B"
+    }
+  ],
+  "2024-12-19": [
+    {
+      "name": "Hard Problem",
+      "rating": 800,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/2044/problem/C"
+    }
+  ],
+  "2024-12-22": [
+    {
+      "name": "Counting Pairs",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2051/problem/D"
+    },
+    {
+      "name": "Preparing for the Exam",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2051/problem/C"
+    },
+    {
+      "name": "Ski Resort",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1840/problem/C"
+    },
+    {
+      "name": "Mex Master",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1806/problem/B"
+    },
+    {
+      "name": "Vika and Her Friends",
+      "rating": 900,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1848/problem/A"
+    },
+    {
+      "name": "Journey",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2051/problem/B"
+    },
+    {
+      "name": "Preparing for the Olympiad",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2051/problem/A"
+    },
+    {
+      "name": "Upload More RAM",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1987/problem/A"
+    }
+  ],
+  "2024-12-23": [
+    {
+      "name": "Perpendicular Segments",
+      "rating": 900,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/2026/problem/A"
+    },
+    {
+      "name": "Madoka and Math Dad",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1647/problem/A"
+    }
+  ],
+  "2024-12-24": [
+    {
+      "name": "Infinite Replacement",
+      "rating": 1000,
+      "submissions": 5,
+      "link": "https://codeforces.com/contest/1674/problem/C"
+    },
+    {
+      "name": "Chess For Three",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1973/problem/A"
+    },
+    {
+      "name": "LOL Lovers",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1912/problem/L"
+    }
+  ],
+  "2024-12-25": [
+    {
+      "name": "Recovering a Small String",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1931/problem/A"
+    }
+  ],
+  "2024-12-26": [
+    {
+      "name": "Make Majority",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1988/problem/B"
+    }
+  ],
+  "2025-01-02": [
+    {
+      "name": "Median of an Array",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1946/problem/A"
+    },
+    {
+      "name": "Quintomania",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2036/problem/A"
+    },
+    {
+      "name": "Sequence Game",
+      "rating": 800,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/1862/problem/B"
+    }
+  ],
+  "2025-01-04": [
+    {
+      "name": "Painting the Ribbon",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1954/problem/A"
+    },
+    {
+      "name": "Permutation Swap",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1828/problem/B"
+    },
+    {
+      "name": "The Corridor or There and Back Again",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1872/problem/B"
+    },
+    {
+      "name": "Make A Equal to B",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1736/problem/A"
+    },
+    {
+      "name": "Morning Sandwich",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1849/problem/A"
+    }
+  ],
+  "2025-01-06": [
+    {
+      "name": "Minimize Inversions",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1918/problem/B"
+    },
+    {
+      "name": "Not Dividing",
+      "rating": 900,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/1794/problem/B"
+    },
+    {
+      "name": "Colored Balls: Revisited",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1728/problem/A"
+    },
+    {
+      "name": "Extremely Round",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1766/problem/A"
+    },
+    {
+      "name": "Long Long",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1843/problem/B"
+    }
+  ],
+  "2025-01-09": [
+    {
+      "name": "Doremy's Perfect Math Class",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1764/problem/B"
+    },
+    {
+      "name": "Everyone Loves Tres",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2035/problem/B"
+    },
+    {
+      "name": "Square Counting",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1646/problem/A"
+    },
+    {
+      "name": "Walking Boy",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1776/problem/A"
+    }
+  ],
+  "2025-01-31": [
+    {
+      "name": "Comparison String",
+      "rating": 900,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1837/problem/B"
+    },
+    {
+      "name": "Dual Trigger",
+      "rating": 900,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1951/problem/A"
+    },
+    {
+      "name": "Social Distance",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1668/problem/B"
+    },
+    {
+      "name": "Shohag Loves Mod",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2039/problem/A"
+    }
+  ],
+  "2025-02-03": [
+    {
+      "name": "Deadly Laser",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1721/problem/B"
+    },
+    {
+      "name": "Clockwork",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2062/problem/B"
+    },
+    {
+      "name": "Come Together",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1845/problem/B"
+    },
+    {
+      "name": "Word on the Paper",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1850/problem/C"
+    }
+  ],
+  "2025-02-04": [
+    {
+      "name": "Penchick and Satay Sticks",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2031/problem/B"
+    },
+    {
+      "name": "Destroyer",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1836/problem/A"
+    }
+  ],
+  "2025-02-10": [
+    {
+      "name": "Chips on the Board",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1879/problem/B"
+    },
+    {
+      "name": "Skibidus and Amog'u",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2065/problem/A"
+    },
+    {
+      "name": "Skibidus and Ohio",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/2065/problem/B"
+    }
+  ],
+  "2025-02-14": [
+    {
+      "name": "Adjacent Digit Sums",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2067/problem/A"
+    }
+  ],
+  "2025-02-18": [
+    {
+      "name": "Clock and Strings",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1971/problem/C"
+    },
+    {
+      "name": "Game with Colored Marbles",
+      "rating": 900,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/2042/problem/B"
+    },
+    {
+      "name": "Destroying Bridges",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1944/problem/A"
+    }
+  ],
+  "2025-02-21": [
+    {
+      "name": "Forked!",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1904/problem/A"
+    },
+    {
+      "name": "Hall of Fame",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1779/problem/A"
+    }
+  ],
+  "2025-02-26": [
+    {
+      "name": "New World, New Me, New Array",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2072/problem/A"
+    }
+  ],
+  "2025-03-04": [
+    {
+      "name": "BAN BAN",
+      "rating": 900,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/1747/problem/B"
+    },
+    {
+      "name": "Submission Bait",
+      "rating": 900,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1990/problem/A"
+    },
+    {
+      "name": "Increasing Sequence",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1882/problem/A"
+    },
+    {
+      "name": "Setting up Camp",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1945/problem/A"
+    }
+  ],
+  "2025-03-05": [
+    {
+      "name": "Having Been a Treasurer in the Past, I Help Goblins Deceive",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2072/problem/B"
+    },
+    {
+      "name": "MKnez's ConstructiveForces Task",
+      "rating": 900,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/1779/problem/B"
+    },
+    {
+      "name": "Tea with Tangerines",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1735/problem/B"
+    },
+    {
+      "name": "Unnatural Language Processing",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1915/problem/D"
+    },
+    {
+      "name": "Game with Board",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1841/problem/A"
+    }
+  ],
+  "2025-03-06": [
+    {
+      "name": "Count the Number of Pairs",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1800/problem/B"
+    },
+    {
+      "name": "Ela Sorting Books",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1737/problem/A"
+    },
+    {
+      "name": "Indivisible",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1818/problem/B"
+    },
+    {
+      "name": "How Much Does Daytona Cost?",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1878/problem/A"
+    },
+    {
+      "name": "Night at the Museum",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/731/problem/A"
+    },
+    {
+      "name": "Tricky Template",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1922/problem/A"
+    }
+  ],
+  "2025-03-07": [
+    {
+      "name": "Farmer John's Card Game",
+      "rating": 1000,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/2060/problem/B"
+    },
+    {
+      "name": "Gorilla and Permutation",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1992/problem/C"
+    },
+    {
+      "name": "Brogramming Contest",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2064/problem/A"
+    }
+  ],
+  "2025-03-10": [
+    {
+      "name": "Card Game",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1999/problem/B"
+    },
+    {
+      "name": "Hamon Odyssey",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1847/problem/B"
+    },
+    {
+      "name": "Keep it Beautiful",
+      "rating": 1000,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/1841/problem/B"
+    },
+    {
+      "name": "Swap and Delete",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1913/problem/B"
+    },
+    {
+      "name": "Turtle and Piggy Are Playing a Game 2",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2003/problem/B"
+    }
+  ],
+  "2025-03-27": [
+    {
+      "name": "Triple",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1669/problem/B"
+    }
+  ],
+  "2025-04-07": [
+    {
+      "name": "Make It Equal",
+      "rating": 2100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2038/problem/B"
+    },
+    {
+      "name": "Bonus Project",
+      "rating": 1400,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2038/problem/A"
+    },
+    {
+      "name": "Bridge Renovation",
+      "rating": 1400,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2038/problem/L"
+    },
+    {
+      "name": "DIY",
+      "rating": 1400,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2038/problem/C"
+    },
+    {
+      "name": "Fixing the Expression",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2038/problem/N"
+    },
+    {
+      "name": "Waiting for...",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2038/problem/J"
+    }
+  ],
+  "2025-04-08": [
+    {
+      "name": "Simple Repetition",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2093/problem/C"
+    },
+    {
+      "name": "Expensive Number",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2093/problem/B"
+    },
+    {
+      "name": "Ideal Generator",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2093/problem/A"
+    }
+  ],
+  "2025-04-11": [
+    {
+      "name": "Rudolph and Tic-Tac-Toe",
+      "rating": 800,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/1846/problem/B"
+    }
+  ],
+  "2025-04-18": [
+    {
+      "name": "Tung Tung Sahur",
+      "rating": 1100,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2094/problem/D"
+    },
+    {
+      "name": "Brr Brrr Patapim",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2094/problem/C"
+    },
+    {
+      "name": "Bobritto Bandito",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2094/problem/B"
+    },
+    {
+      "name": "Trippi Troppi",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2094/problem/A"
+    }
+  ],
+  "2025-06-10": [
+    {
+      "name": "False Alarm",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2117/problem/A"
+    },
+    {
+      "name": "Shrink",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2117/problem/B"
+    },
+    {
+      "name": "Ten Words of Wisdom",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1850/problem/B"
+    }
+  ],
+  "2025-06-14": [
+    {
+      "name": "Cards for Friends",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1472/problem/A"
+    },
+    {
+      "name": "A Prize No One Can Win",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/102007/problem/A"
+    },
+    {
+      "name": "Birthday Boy",
+      "rating": "N/A",
+      "submissions": 2,
+      "link": "https://codeforces.com/gym/102007/problem/B"
+    },
+    {
+      "name": "Cardboard Container",
+      "rating": "N/A",
+      "submissions": 6,
+      "link": "https://codeforces.com/gym/102007/problem/C"
+    },
+    {
+      "name": "Financial Planning",
+      "rating": "N/A",
+      "submissions": 3,
+      "link": "https://codeforces.com/gym/102007/problem/F"
+    },
+    {
+      "name": "Janitor Troubles",
+      "rating": "N/A",
+      "submissions": 2,
+      "link": "https://codeforces.com/gym/102007/problem/J"
+    }
+  ],
+  "2025-06-15": [
+    {
+      "name": "King Escape",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1033/problem/A"
+    },
+    {
+      "name": "Move to the End",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2104/problem/B"
+    },
+    {
+      "name": "Reverse",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1638/problem/A"
+    }
+  ],
+  "2025-06-16": [
+    {
+      "name": "Same Parity Summands",
+      "rating": 1200,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/1352/problem/B"
+    },
+    {
+      "name": "Distinct Split",
+      "rating": 1000,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1791/problem/D"
+    }
+  ],
+  "2025-06-17": [
+    {
+      "name": "Chewbaсca and Number",
+      "rating": 1200,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/514/problem/A"
+    },
+    {
+      "name": "Black and White Stripe",
+      "rating": 1000,
+      "submissions": 5,
+      "link": "https://codeforces.com/contest/1690/problem/D"
+    },
+    {
+      "name": "Good Prefixes",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1985/problem/C"
+    },
+    {
+      "name": "Letter Home",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2121/problem/A"
+    },
+    {
+      "name": "Square Year",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/2114/problem/A"
+    }
+  ],
+  "2025-06-19": [
+    {
+      "name": "Gravity Flip",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/405/problem/A"
+    },
+    {
+      "name": "Keyboard",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/474/problem/A"
+    },
+    {
+      "name": "Above the Clouds",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2121/problem/B"
+    },
+    {
+      "name": "Three Suitcases",
+      "rating": "N/A",
+      "submissions": 3,
+      "link": "https://codeforces.com/gym/104872/problem/A"
+    }
+  ],
+  "2025-06-20": [
+    {
+      "name": "Monsters",
+      "rating": 1000,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/1849/problem/B"
+    },
+    {
+      "name": "Two-gram",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/977/problem/B"
+    }
+  ],
+  "2025-06-21": [
+    {
+      "name": "Taxi",
+      "rating": 1100,
+      "submissions": 11,
+      "link": "https://codeforces.com/contest/158/problem/B"
+    }
+  ],
+  "2025-06-22": [
+    {
+      "name": "Final Boss",
+      "rating": 1500,
+      "submissions": 6,
+      "link": "https://codeforces.com/contest/1985/problem/F"
+    },
+    {
+      "name": "Secret Box",
+      "rating": 1200,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1985/problem/E"
+    },
+    {
+      "name": "Restore the Weather",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1833/problem/B"
+    },
+    {
+      "name": "Odd Set",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1542/problem/A"
+    }
+  ],
+  "2025-06-23": [
+    {
+      "name": "Arena of Greed",
+      "rating": 1400,
+      "submissions": 6,
+      "link": "https://codeforces.com/contest/1425/problem/A"
+    },
+    {
+      "name": "Robin Hood in Town",
+      "rating": 1100,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/2014/problem/C"
+    },
+    {
+      "name": "Race",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2112/problem/A"
+    }
+  ],
+  "2025-06-25": [
+    {
+      "name": "Coloring Game",
+      "rating": 1300,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2112/problem/C"
+    },
+    {
+      "name": "Shrinking Array",
+      "rating": 1100,
+      "submissions": 5,
+      "link": "https://codeforces.com/contest/2112/problem/B"
+    },
+    {
+      "name": "Desorting",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1853/problem/A"
+    }
+  ],
+  "2025-06-26": [
+    {
+      "name": "Books",
+      "rating": 1400,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/279/problem/B"
+    },
+    {
+      "name": "IQ test",
+      "rating": 1300,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/25/problem/A"
+    },
+    {
+      "name": "Worms",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/474/problem/B"
+    },
+    {
+      "name": "Laptops",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/456/problem/A"
+    },
+    {
+      "name": "Filling Shapes",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1182/problem/A"
+    },
+    {
+      "name": "Make Product Equal One",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1206/problem/B"
+    }
+  ],
+  "2025-07-09": [
+    {
+      "name": "Powering the Hero (easy version)",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1800/problem/C1"
+    }
+  ],
+  "2025-07-11": [
+    {
+      "name": "Digits",
+      "rating": 1100,
+      "submissions": 5,
+      "link": "https://codeforces.com/contest/2043/problem/B"
+    }
+  ],
+  "2025-07-14": [
+    {
+      "name": "Traffic Light",
+      "rating": 1000,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1744/problem/C"
+    },
+    {
+      "name": "Password",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1743/problem/A"
+    }
+  ],
+  "2025-07-15": [
+    {
+      "name": "Erase First or Second Letter",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1917/problem/B"
+    },
+    {
+      "name": "Splitting Items",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2004/problem/C"
+    },
+    {
+      "name": "Mark the Photographer",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1705/problem/A"
+    }
+  ],
+  "2025-07-16": [
+    {
+      "name": "Two Divisors",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1916/problem/B"
+    }
+  ],
+  "2025-07-17": [
+    {
+      "name": "Bouquet (Easy Version)",
+      "rating": 1100,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1995/problem/B1"
+    }
+  ],
+  "2025-07-24": [
+    {
+      "name": "Only One Digit",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2126/problem/A"
+    }
+  ],
+  "2025-07-27": [
+    {
+      "name": "Leftmost Below",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2128/problem/C"
+    },
+    {
+      "name": "Deque Process",
+      "rating": 1100,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2128/problem/B"
+    },
+    {
+      "name": "Recycling Center",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/2128/problem/A"
+    }
+  ],
+  "2025-07-31": [
+    {
+      "name": "Coffee Cup Combo",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/104030/problem/C"
+    },
+    {
+      "name": "Disc District",
+      "rating": "N/A",
+      "submissions": 2,
+      "link": "https://codeforces.com/gym/104030/problem/D"
+    },
+    {
+      "name": "Highest Hill",
+      "rating": "N/A",
+      "submissions": 6,
+      "link": "https://codeforces.com/gym/104030/problem/H"
+    }
+  ],
+  "2025-08-06": [
+    {
+      "name": "Black Circles",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2002/problem/C"
+    },
+    {
+      "name": "Mirror Grid",
+      "rating": 1200,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1703/problem/E"
+    },
+    {
+      "name": "378QAQ and Mocha's Array",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1975/problem/B"
+    },
+    {
+      "name": "Halloumi Boxes",
+      "rating": 800,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/1903/problem/A"
+    },
+    {
+      "name": "SSeeeeiinngg DDoouubbllee",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1758/problem/A"
+    }
+  ],
+  "2025-08-08": [
+    {
+      "name": "Minimise Sum",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2124/problem/B"
+    },
+    {
+      "name": "Bus to Pénjamo",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2022/problem/A"
+    }
+  ],
+  "2025-08-09": [
+    {
+      "name": "Chaya Calendar",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1932/problem/B"
+    },
+    {
+      "name": "Metro",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1055/problem/A"
+    },
+    {
+      "name": "Li Hua and Maze",
+      "rating": 800,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/1797/problem/A"
+    },
+    {
+      "name": "Chuanpai",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/103117/problem/A"
+    },
+    {
+      "name": "Hotpot",
+      "rating": "N/A",
+      "submissions": 6,
+      "link": "https://codeforces.com/gym/103117/problem/B"
+    },
+    {
+      "name": "K-skip Permutation",
+      "rating": "N/A",
+      "submissions": 3,
+      "link": "https://codeforces.com/gym/103117/problem/K"
+    },
+    {
+      "name": "Nihongo wa Muzukashii Desu",
+      "rating": "N/A",
+      "submissions": 2,
+      "link": "https://codeforces.com/gym/103117/problem/H"
+    },
+    {
+      "name": "Rock Paper Scissors",
+      "rating": "N/A",
+      "submissions": 3,
+      "link": "https://codeforces.com/gym/103117/problem/D"
+    },
+    {
+      "name": "True Story",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/103117/problem/M"
+    }
+  ],
+  "2025-08-10": [
+    {
+      "name": "Make it Equal",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2131/problem/C"
+    },
+    {
+      "name": "Alternating Series",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/2131/problem/B"
+    },
+    {
+      "name": "Lever",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2131/problem/A"
+    }
+  ],
+  "2025-08-11": [
+    {
+      "name": "Construct the String",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1335/problem/B"
+    }
+  ],
+  "2025-09-15": [
+    {
+      "name": "Maximum Cost Permutation",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2144/problem/B"
+    },
+    {
+      "name": "Cut the Array",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2144/problem/A"
+    }
+  ],
+  "2025-09-16": [
+    {
+      "name": "Settlement of Guinea Pigs",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1802/problem/B"
+    },
+    {
+      "name": "Fun Permutation",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2137/problem/B"
+    },
+    {
+      "name": "Tales of a Sort",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1856/problem/A"
+    }
+  ],
+  "2025-09-19": [
+    {
+      "name": "Two Buttons",
+      "rating": 1400,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/520/problem/B"
+    },
+    {
+      "name": "K-Sort",
+      "rating": 1000,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1987/problem/B"
+    },
+    {
+      "name": "Shohag Loves Strings",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2039/problem/B"
+    },
+    {
+      "name": "Pacer",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2148/problem/C"
+    },
+    {
+      "name": "Sublime Sequence",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2148/problem/A"
+    }
+  ],
+  "2025-09-20": [
+    {
+      "name": "Shortest Increasing Path",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2147/problem/A"
+    }
+  ],
+  "2025-09-22": [
+    {
+      "name": "Need More Arrays",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2114/problem/C"
+    },
+    {
+      "name": "Square Pool",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2120/problem/B"
+    },
+    {
+      "name": "Two Out of Three",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1894/problem/B"
+    },
+    {
+      "name": "Twin Permutations",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1831/problem/A"
+    }
+  ],
+  "2025-09-23": [
+    {
+      "name": "Exchange",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1765/problem/E"
+    },
+    {
+      "name": "Prefix and Suffix Array",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1794/problem/A"
+    }
+  ],
+  "2025-09-24": [
+    {
+      "name": "Tiles Comeback",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1851/problem/C"
+    },
+    {
+      "name": "YetnotherrokenKeoard",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1907/problem/B"
+    },
+    {
+      "name": "Points and Minimum Distance",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1895/problem/B"
+    }
+  ],
+  "2025-09-30": [
+    {
+      "name": "Game with Doors",
+      "rating": 1000,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/2004/problem/B"
+    },
+    {
+      "name": "Rule of League",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1733/problem/B"
+    },
+    {
+      "name": "Kamilka and the Sheep",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2092/problem/A"
+    }
+  ],
+  "2025-10-01": [
+    {
+      "name": "Sending Messages",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1921/problem/C"
+    },
+    {
+      "name": "Energy Crystals",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2111/problem/A"
+    }
+  ],
+  "2025-10-02": [
+    {
+      "name": "Hamburgers",
+      "rating": 1600,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/371/problem/C"
+    },
+    {
+      "name": "Non-Descending Arrays",
+      "rating": 1300,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/2144/problem/C"
+    }
+  ],
+  "2025-10-03": [
+    {
+      "name": "Game of Mathletes",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2060/problem/C"
+    },
+    {
+      "name": "Sum in Binary Tree",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1843/problem/C"
+    }
+  ],
+  "2025-10-06": [
+    {
+      "name": "Monocarp's String",
+      "rating": 1300,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2145/problem/C"
+    },
+    {
+      "name": "Deck of Cards",
+      "rating": 1000,
+      "submissions": 6,
+      "link": "https://codeforces.com/contest/2145/problem/B"
+    },
+    {
+      "name": "Candies for Nephews",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2145/problem/A"
+    },
+    {
+      "name": "Help The Support Lady",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/102219/problem/K"
+    },
+    {
+      "name": "I Don't Want To Pay For The Late Jar!",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/102219/problem/C"
+    },
+    {
+      "name": "Kitchen Plates",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/102219/problem/J"
+    },
+    {
+      "name": "Mental Rotation",
+      "rating": "N/A",
+      "submissions": 4,
+      "link": "https://codeforces.com/gym/102219/problem/A"
+    },
+    {
+      "name": "SpongeBob SquarePants",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/102219/problem/B"
+    },
+    {
+      "name": "To Crash Or Not To Crash",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/102219/problem/I"
+    }
+  ],
+  "2025-10-08": [
+    {
+      "name": "Fireworks",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1945/problem/B"
+    },
+    {
+      "name": "Ideal Point",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1795/problem/B"
+    },
+    {
+      "name": "GamingForces",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1792/problem/A"
+    },
+    {
+      "name": "Musical Puzzle",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1833/problem/A"
+    },
+    {
+      "name": "Chopsticks",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/105307/problem/C"
+    }
+  ],
+  "2025-10-09": [
+    {
+      "name": "Bestie",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1732/problem/A"
+    },
+    {
+      "name": "Little Nikita",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1977/problem/A"
+    },
+    {
+      "name": "Correct Brackets",
+      "rating": "N/A",
+      "submissions": 2,
+      "link": "https://codeforces.com/gym/106068/problem/A"
+    },
+    {
+      "name": "Good Luck Syria",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/106068/problem/F"
+    },
+    {
+      "name": "Hassan VS Naya",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/106068/problem/K"
+    },
+    {
+      "name": "SCPC is Typing...",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/106068/problem/B"
+    },
+    {
+      "name": "The judges problem",
+      "rating": "N/A",
+      "submissions": 3,
+      "link": "https://codeforces.com/gym/106068/problem/I"
+    },
+    {
+      "name": "Triangle hole",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/106068/problem/L"
+    },
+    {
+      "name": "Washing Machine",
+      "rating": "N/A",
+      "submissions": 4,
+      "link": "https://codeforces.com/gym/106068/problem/J"
+    }
+  ],
+  "2025-10-10": [
+    {
+      "name": "Chamo and Mocha's Array",
+      "rating": 1200,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1975/problem/C"
+    },
+    {
+      "name": "Game with string",
+      "rating": 1200,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1104/problem/B"
+    },
+    {
+      "name": "Coprime",
+      "rating": 1100,
+      "submissions": 5,
+      "link": "https://codeforces.com/contest/1742/problem/D"
+    },
+    {
+      "name": "Пипетка",
+      "rating": "N/A",
+      "submissions": 8,
+      "link": "https://codeforces.com/gym/106034/problem/E"
+    },
+    {
+      "name": "Телефонные номера",
+      "rating": "N/A",
+      "submissions": 2,
+      "link": "https://codeforces.com/gym/106034/problem/A"
+    }
+  ],
+  "2025-10-13": [
+    {
+      "name": "Product of Three Numbers",
+      "rating": 1300,
+      "submissions": 5,
+      "link": "https://codeforces.com/contest/1294/problem/C"
+    },
+    {
+      "name": "Bowling Frame",
+      "rating": 1200,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2041/problem/B"
+    },
+    {
+      "name": "Long Multiplication",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1954/problem/C"
+    },
+    {
+      "name": "Permutations & Primes",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1844/problem/B"
+    },
+    {
+      "name": "Jellyfish and Undertale",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1875/problem/A"
+    },
+    {
+      "name": "Mocha and Math",
+      "rating": 900,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1559/problem/A"
+    },
+    {
+      "name": "Card Exchange",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1966/problem/A"
+    },
+    {
+      "name": "One and Two",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1788/problem/A"
+    }
+  ],
+  "2025-10-14": [
+    {
+      "name": "Homework",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2132/problem/A"
+    },
+    {
+      "name": "Dilation",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/105387/problem/A"
+    },
+    {
+      "name": "Entomologist",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/105387/problem/N"
+    },
+    {
+      "name": "Toys",
+      "rating": "N/A",
+      "submissions": 4,
+      "link": "https://codeforces.com/gym/105387/problem/H"
+    }
+  ],
+  "2025-10-16": [
+    {
+      "name": "Zero Array",
+      "rating": 1500,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1201/problem/B"
+    },
+    {
+      "name": "Exams",
+      "rating": 1400,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/479/problem/C"
+    },
+    {
+      "name": "Maximum Median",
+      "rating": 1400,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1201/problem/C"
+    },
+    {
+      "name": "Pair of Topics",
+      "rating": 1400,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1324/problem/D"
+    }
+  ],
+  "2025-10-18": [
+    {
+      "name": "Different Differences",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1772/problem/C"
+    },
+    {
+      "name": "Maximum Substring",
+      "rating": 800,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1750/problem/B"
+    },
+    {
+      "name": "Huh? Oh, Yes, Welcome to the Contest!",
+      "rating": "N/A",
+      "submissions": 2,
+      "link": "https://codeforces.com/gym/105535/problem/H"
+    },
+    {
+      "name": "Know Your Duration of Stay",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/105535/problem/K"
+    },
+    {
+      "name": "Late Autumn Set of Cards",
+      "rating": "N/A",
+      "submissions": 3,
+      "link": "https://codeforces.com/gym/105535/problem/L"
+    }
+  ],
+  "2025-10-19": [
+    {
+      "name": "Adjust The Presentation (Easy Version)",
+      "rating": 1300,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2021/problem/C1"
+    },
+    {
+      "name": "Earning on Bets",
+      "rating": 1200,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1979/problem/C"
+    },
+    {
+      "name": "Make it Zigzag",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2154/problem/B"
+    },
+    {
+      "name": "Greatest Convex",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1768/problem/A"
+    },
+    {
+      "name": "Notelock",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2154/problem/A"
+    }
+  ],
+  "2025-10-20": [
+    {
+      "name": "Drazil and Factorial",
+      "rating": 1400,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/515/problem/C"
+    },
+    {
+      "name": "Prefix Min and Suffix Max",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2123/problem/C"
+    },
+    {
+      "name": "Make It Increasing",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1675/problem/B"
+    },
+    {
+      "name": "Mix Mex Max",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2127/problem/A"
+    }
+  ],
+  "2025-10-21": [
+    {
+      "name": "Cued In",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/101606/problem/C"
+    },
+    {
+      "name": "Flipping Coins",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/101606/problem/F"
+    },
+    {
+      "name": "I Work All Day",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/101606/problem/I"
+    },
+    {
+      "name": "Just A Minim",
+      "rating": "N/A",
+      "submissions": 2,
+      "link": "https://codeforces.com/gym/101606/problem/J"
+    }
+  ],
+  "2025-10-22": [
+    {
+      "name": "Laura and Operations",
+      "rating": 900,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1900/problem/B"
+    },
+    {
+      "name": "Andryusha and Socks",
+      "rating": 800,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/780/problem/A"
+    },
+    {
+      "name": "Alien Sunset",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/101606/problem/A"
+    },
+    {
+      "name": "Chat Ban",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/103430/problem/G"
+    },
+    {
+      "name": "Distance",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/103430/problem/M"
+    },
+    {
+      "name": "Haiku",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/103430/problem/N"
+    },
+    {
+      "name": "Smash the Trash",
+      "rating": "N/A",
+      "submissions": 2,
+      "link": "https://codeforces.com/gym/103430/problem/L"
+    },
+    {
+      "name": "Special Permutation",
+      "rating": "N/A",
+      "submissions": 3,
+      "link": "https://codeforces.com/gym/103430/problem/B"
+    },
+    {
+      "name": "X-Magic Pair",
+      "rating": "N/A",
+      "submissions": 2,
+      "link": "https://codeforces.com/gym/103430/problem/F"
+    }
+  ],
+  "2025-10-23": [
+    {
+      "name": "Integer Overflow",
+      "rating": "N/A",
+      "submissions": 2,
+      "link": "https://codeforces.com/gym/106110/problem/C"
+    },
+    {
+      "name": "Load Distribution",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/106110/problem/A"
+    },
+    {
+      "name": "Parallel Checking",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/106110/problem/H"
+    },
+    {
+      "name": "TL, ML or OK?",
+      "rating": "N/A",
+      "submissions": 2,
+      "link": "https://codeforces.com/gym/106110/problem/D"
+    },
+    {
+      "name": "What to solve next?",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/106110/problem/B"
+    }
+  ],
+  "2025-10-24": [
+    {
+      "name": "The Football Season",
+      "rating": 2000,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1244/problem/C"
+    },
+    {
+      "name": "Mixing Water",
+      "rating": 1700,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/1359/problem/C"
+    },
+    {
+      "name": "Pizza Time",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2156/problem/A"
+    }
+  ],
+  "2025-10-25": [
+    {
+      "name": "Party",
+      "rating": 900,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/115/problem/A"
+    }
+  ],
+  "2025-10-26": [
+    {
+      "name": "Hungry Games",
+      "rating": 1600,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1994/problem/C"
+    },
+    {
+      "name": "Doremy's City Construction",
+      "rating": 1400,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1764/problem/C"
+    },
+    {
+      "name": "Plus Minus Permutation",
+      "rating": 1200,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1872/problem/D"
+    },
+    {
+      "name": "Removals Game",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2002/problem/B"
+    }
+  ],
+  "2025-10-27": [
+    {
+      "name": "Skibidus and Fanum Tax (hard version)",
+      "rating": 1300,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2065/problem/C2"
+    },
+    {
+      "name": "Skibidus and Fanum Tax (easy version)",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2065/problem/C1"
+    },
+    {
+      "name": "Destruction of the Dandelion Fields",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2148/problem/D"
+    },
+    {
+      "name": "Lasers",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2148/problem/B"
+    }
+  ],
+  "2025-10-28": [
+    {
+      "name": "Yet Another Array Problem",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2167/problem/D"
+    },
+    {
+      "name": "Isamatdin and His Magic Wand!",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2167/problem/C"
+    },
+    {
+      "name": "Square?",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2167/problem/A"
+    },
+    {
+      "name": "Your Name",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2167/problem/B"
+    }
+  ],
+  "2025-10-29": [
+    {
+      "name": "El fucho",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2155/problem/A"
+    },
+    {
+      "name": "Taymyr is calling you",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/764/problem/A"
+    }
+  ],
+  "2025-10-30": [
+    {
+      "name": "Less or Equal",
+      "rating": 1200,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/977/problem/C"
+    }
+  ],
+  "2025-10-31": [
+    {
+      "name": "Loyalty",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2161/problem/C"
+    },
+    {
+      "name": "Round Trip",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2161/problem/A"
+    }
+  ],
+  "2025-11-03": [
+    {
+      "name": "Amr and Pins",
+      "rating": 1400,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/507/problem/B"
+    },
+    {
+      "name": "Same Differences",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1520/problem/D"
+    },
+    {
+      "name": "Toy Army",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/84/problem/A"
+    }
+  ],
+  "2025-11-04": [
+    {
+      "name": "Is it rated - 2",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1505/problem/A"
+    }
+  ],
+  "2025-11-05": [
+    {
+      "name": "Maximize Sum of Digits",
+      "rating": 1300,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/770/problem/B"
+    }
+  ],
+  "2025-11-07": [
+    {
+      "name": "Flipping Game",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/327/problem/A"
+    }
+  ],
+  "2025-11-08": [
+    {
+      "name": "Odd Selection",
+      "rating": 1200,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1363/problem/A"
+    },
+    {
+      "name": "Refresher into Midas",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/104891/problem/I"
+    }
+  ],
+  "2025-11-10": [
+    {
+      "name": "Klee's SUPER DUPER LARGE Array!!!",
+      "rating": 1400,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2009/problem/E"
+    },
+    {
+      "name": "Interview",
+      "rating": 1300,
+      "submissions": 7,
+      "link": "https://codeforces.com/contest/1807/problem/E"
+    },
+    {
+      "name": "Equal Values",
+      "rating": 1100,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/2111/problem/C"
+    }
+  ],
+  "2025-11-11": [
+    {
+      "name": "Turtle and Good Strings",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2003/problem/A"
+    },
+    {
+      "name": "An Easy Calculus Problem",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/104118/problem/A"
+    },
+    {
+      "name": "Conform Conforme",
+      "rating": "N/A",
+      "submissions": 2,
+      "link": "https://codeforces.com/gym/104118/problem/C"
+    },
+    {
+      "name": "Junior Steiner Three",
+      "rating": "N/A",
+      "submissions": 4,
+      "link": "https://codeforces.com/gym/104118/problem/J"
+    },
+    {
+      "name": "Kapitan Amazing",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/104118/problem/K"
+    }
+  ],
+  "2025-11-13": [
+    {
+      "name": "Contrast Value",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1832/problem/C"
+    },
+    {
+      "name": "The Lakes",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1829/problem/E"
+    },
+    {
+      "name": "Best Binary String",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1837/problem/C"
+    },
+    {
+      "name": "Consecutive Sum",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1733/problem/A"
+    },
+    {
+      "name": "Gallivanting Merchant",
+      "rating": "N/A",
+      "submissions": 2,
+      "link": "https://codeforces.com/gym/104118/problem/G"
+    }
+  ],
+  "2025-11-14": [
+    {
+      "name": "Range Operation",
+      "rating": 1300,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2169/problem/C"
+    },
+    {
+      "name": "Drifting Away",
+      "rating": 1100,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2169/problem/B"
+    },
+    {
+      "name": "Matrix Stabilization",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1986/problem/B"
+    },
+    {
+      "name": "Alice and Bob",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2169/problem/A"
+    },
+    {
+      "name": "Gardener and the Capybaras (hard version)",
+      "rating": 900,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1775/problem/A2"
+    }
+  ],
+  "2025-11-16": [
+    {
+      "name": "Removal of a Sequence (Easy Version)",
+      "rating": 1500,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/2169/problem/D1"
+    },
+    {
+      "name": "Array merging",
+      "rating": 1000,
+      "submissions": 7,
+      "link": "https://codeforces.com/contest/1831/problem/B"
+    }
+  ],
+  "2025-11-17": [
+    {
+      "name": "Number Maze",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2172/problem/E"
+    },
+    {
+      "name": "ASCII Art Contest",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2172/problem/A"
+    },
+    {
+      "name": "Same Difference",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2166/problem/A"
+    },
+    {
+      "name": "Fuzzy Factorization",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/106178/problem/F"
+    },
+    {
+      "name": "Harder Horizons",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/106178/problem/H"
+    },
+    {
+      "name": "Judgmental Crowd",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/106178/problem/J"
+    }
+  ],
+  "2025-11-18": [
+    {
+      "name": "Dungeon",
+      "rating": 1400,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2164/problem/C"
+    },
+    {
+      "name": "Scuza",
+      "rating": 1200,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1742/problem/E"
+    }
+  ],
+  "2025-11-19": [
+    {
+      "name": "Battle Cows",
+      "rating": 1200,
+      "submissions": 6,
+      "link": "https://codeforces.com/contest/1951/problem/B"
+    },
+    {
+      "name": "Borg Cube",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/106169/problem/A"
+    },
+    {
+      "name": "Nested Loops",
+      "rating": "N/A",
+      "submissions": 2,
+      "link": "https://codeforces.com/gym/106169/problem/H"
+    },
+    {
+      "name": "Nostalgia",
+      "rating": "N/A",
+      "submissions": 3,
+      "link": "https://codeforces.com/gym/106169/problem/B"
+    },
+    {
+      "name": "Sign Entanglement",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/106169/problem/F"
+    },
+    {
+      "name": "Treasure",
+      "rating": "N/A",
+      "submissions": 1,
+      "link": "https://codeforces.com/gym/106169/problem/D"
+    }
+  ],
+  "2025-11-20": [
+    {
+      "name": "Rae Taylor and Trees (easy version)",
+      "rating": 1400,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2171/problem/D"
+    },
+    {
+      "name": "Renako Amaori and XOR Game (hard version)",
+      "rating": 1400,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2171/problem/C2"
+    },
+    {
+      "name": "T-primes",
+      "rating": 1300,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/230/problem/B"
+    },
+    {
+      "name": "Alternating Subsequence",
+      "rating": 1200,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1343/problem/C"
+    },
+    {
+      "name": "BerSU Ball",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/489/problem/B"
+    },
+    {
+      "name": "Kuriyama Mirai's Stones",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/433/problem/B"
+    },
+    {
+      "name": "Renako Amaori and XOR Game (easy version)",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2171/problem/C1"
+    },
+    {
+      "name": "Yuu Koito and Minimum Absolute Sum",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2171/problem/B"
+    },
+    {
+      "name": "Shizuku Hoshikawa and Farm Legs",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2171/problem/A"
+    }
+  ],
+  "2025-11-21": [
+    {
+      "name": "Place of the Olympiad",
+      "rating": 1200,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/2091/problem/D"
+    },
+    {
+      "name": "Make It Zero",
+      "rating": 900,
+      "submissions": 4,
+      "link": "https://codeforces.com/contest/1869/problem/A"
+    }
+  ],
+  "2025-11-23": [
+    {
+      "name": "Billion Players Game",
+      "rating": 1600,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2157/problem/D"
+    },
+    {
+      "name": "Meximum Array 2",
+      "rating": 1400,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2157/problem/C"
+    },
+    {
+      "name": "Expansion Plan 2",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2157/problem/B"
+    },
+    {
+      "name": "Dungeon Equilibrium",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2157/problem/A"
+    }
+  ],
+  "2025-11-24": [
+    {
+      "name": "Palindromic Subsequences",
+      "rating": 1200,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2056/problem/C"
+    },
+    {
+      "name": "Points on Plane",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1809/problem/B"
+    }
+  ],
+  "2025-11-25": [
+    {
+      "name": "Relatively Prime Pairs",
+      "rating": 1000,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/1051/problem/B"
+    }
+  ],
+  "2025-12-01": [
+    {
+      "name": "Suspension",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2158/problem/A"
+    }
+  ],
+  "2025-12-02": [
+    {
+      "name": "Beautiful Permutation",
+      "rating": 1400,
+      "submissions": 5,
+      "link": "https://codeforces.com/contest/2162/problem/D"
+    },
+    {
+      "name": "Land Lot",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/48/problem/B"
+    }
+  ],
+  "2025-12-03": [
+    {
+      "name": "Maximum GCD on Whiteboard",
+      "rating": 1400,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2156/problem/C"
+    },
+    {
+      "name": "Insane Problem",
+      "rating": 1300,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2044/problem/E"
+    },
+    {
+      "name": "Forming Triangles",
+      "rating": 1200,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1922/problem/B"
+    }
+  ],
+  "2025-12-04": [
+    {
+      "name": "Cyclic Merging",
+      "rating": 1300,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2165/problem/A"
+    },
+    {
+      "name": "Maximum Distance To Port",
+      "rating": 1300,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2172/problem/M"
+    }
+  ],
+  "2025-12-28": [
+    {
+      "name": "Yes or Yes",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2178/problem/A"
+    }
+  ],
+  "2026-01-22": [
+    {
+      "name": "Perfect Root",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2185/problem/A"
+    },
+    {
+      "name": "Prefix Max",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2185/problem/B"
+    }
+  ],
+  "2026-02-05": [
+    {
+      "name": "Yet Another Problem About Pairs Satisfying an Inequality",
+      "rating": 1300,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1703/problem/F"
+    }
+  ],
+  "2026-02-06": [
+    {
+      "name": "Good Key, Bad Key",
+      "rating": 1600,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/1703/problem/G"
+    }
+  ],
+  "2026-03-02": [
+    {
+      "name": "Three Activities",
+      "rating": 1200,
+      "submissions": 3,
+      "link": "https://codeforces.com/contest/1914/problem/D"
+    },
+    {
+      "name": "Monster Game",
+      "rating": 1100,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2193/problem/D"
+    },
+    {
+      "name": "Replace and Sum",
+      "rating": 1000,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2193/problem/C"
+    },
+    {
+      "name": "DBMB and the Array",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2193/problem/A"
+    },
+    {
+      "name": "Reverse a Permutation",
+      "rating": 800,
+      "submissions": 2,
+      "link": "https://codeforces.com/contest/2193/problem/B"
+    }
+  ],
+  "2026-03-03": [
+    {
+      "name": "Tab Closing",
+      "rating": 900,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2166/problem/B"
+    },
+    {
+      "name": "Social Experiment",
+      "rating": 800,
+      "submissions": 1,
+      "link": "https://codeforces.com/contest/2184/problem/A"
+    }
+  ]
+}
