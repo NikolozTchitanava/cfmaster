@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { MissingDatabaseConfigError } from "@/lib/db";
+import { DATABASE_ENV_HELP, MissingDatabaseConfigError } from "@/lib/db";
 import { verifyPassword } from "@/lib/security";
 import { setSessionCookie } from "@/lib/session";
 import { createSession, getUserWithPasswordByIdentity } from "@/lib/store";
@@ -28,7 +28,7 @@ export async function POST(request: Request) {
   } catch (error) {
     const message =
       error instanceof MissingDatabaseConfigError
-        ? "Add DATABASE_URL before using login on Vercel or locally."
+        ? DATABASE_ENV_HELP
         : error instanceof Error
           ? error.message
           : "Could not log in.";

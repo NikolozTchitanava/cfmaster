@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { MissingDatabaseConfigError } from "@/lib/db";
+import { DATABASE_ENV_HELP, MissingDatabaseConfigError } from "@/lib/db";
 import { getCurrentUser } from "@/lib/session";
 import { updateUserSnapshot } from "@/lib/store";
 import { withMessage } from "@/lib/utils";
@@ -17,7 +17,7 @@ export async function POST(request: Request) {
   } catch (error) {
     const message =
       error instanceof MissingDatabaseConfigError
-        ? "Add DATABASE_URL before syncing profiles."
+        ? DATABASE_ENV_HELP
         : error instanceof Error
           ? error.message
           : "Could not sync the profile.";

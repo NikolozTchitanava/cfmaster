@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { MissingDatabaseConfigError } from "@/lib/db";
+import { DATABASE_ENV_HELP, MissingDatabaseConfigError } from "@/lib/db";
 import { hashPassword } from "@/lib/security";
 import { setSessionCookie } from "@/lib/session";
 import { createSession, createUserAccount } from "@/lib/store";
@@ -33,7 +33,7 @@ export async function POST(request: Request) {
   } catch (error) {
     const message =
       error instanceof MissingDatabaseConfigError
-        ? "Add DATABASE_URL before using signup on Vercel or locally."
+        ? DATABASE_ENV_HELP
         : error instanceof Error
           ? error.message
           : "Could not create the account.";

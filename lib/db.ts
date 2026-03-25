@@ -20,10 +20,38 @@ function getEnvValue(...keys: string[]): string {
   return "";
 }
 
-function buildSupabaseDatabaseUrl(): string {
-  const connectionTemplate = getEnvValue(
+function withSslMode(connectionString: string): string {
+  if (!connectionString) {
+    return "";
+  }
+
+  return connectionString.includes("sslmode=")
+    ? connectionString
+    : `${connectionString}${connectionString.includes("?") ? "&" : "?"}sslmode=require`;
+}
+
+function buildConnectionFromComponents(): string {
+  const host = getEnvValue("POSTGRES_HOST", "SUPABASE_DB_HOST", "supabase_db_host");
+  const database = getEnvValue("POSTGRES_DATABASE", "POSTGRES_DB", "SUPABASE_DB_NAME", "supabase_db_name");
+  const user = getEnvValue("POSTGRES_USER", "SUPABASE_DB_USER", "supabase_db_user");
+  const password = getEnvValue("POSTGRES_PASSWORD", "SUPABASE_PASSWORD", "supabase_password");
+  const port = getEnvValue("POSTGRES_PORT", "SUPABASE_DB_PORT", "supabase_db_port") || "5432";
+
+  if (!host || !database || !user || !password) {
+    return "";
+  }
+
+  const encodedUser = encodeURIComponent(user);
+  const encodedPassword = encodeURIComponent(password);
+  return `postgresql://${encodedUser}:${encodedPassword}@${host}:${port}/${database}`;
+}
+
+function buildDatabaseUrl(): string {
+  const directConnection = getEnvValue(
     "DATABASE_URL",
     "POSTGRES_URL",
+    "POSTGRES_PRISMA_URL",
+    "POSTGRES_URL_NON_POOLING",
     "SUPABASE_POOLER_CONNECTION_STRING",
     "supabase_pooler_connection_string",
     "SUPABASE_DIRECT_CONNECTION_STRING",
@@ -31,30 +59,26 @@ function buildSupabaseDatabaseUrl(): string {
     "SUPABASE_CONNECTION_STRING",
     "supabase_connection_string"
   );
-  const supabasePassword = getEnvValue("SUPABASE_PASSWORD", "supabase_password");
+  const supabasePassword = getEnvValue("POSTGRES_PASSWORD", "SUPABASE_PASSWORD", "supabase_password");
 
-  if (!connectionTemplate) {
-    return "";
+  if (directConnection) {
+    const resolvedConnectionString = directConnection.includes("[YOUR-PASSWORD]")
+      ? directConnection.replace("[YOUR-PASSWORD]", encodeURIComponent(supabasePassword))
+      : directConnection;
+
+    return withSslMode(resolvedConnectionString);
   }
 
-  const resolvedConnectionString = connectionTemplate.includes("[YOUR-PASSWORD]")
-    ? connectionTemplate.replace("[YOUR-PASSWORD]", encodeURIComponent(supabasePassword))
-    : connectionTemplate;
-
-  if (!resolvedConnectionString) {
-    return "";
-  }
-
-  return resolvedConnectionString.includes("sslmode=")
-    ? resolvedConnectionString
-    : `${resolvedConnectionString}${resolvedConnectionString.includes("?") ? "&" : "?"}sslmode=require`;
+  return withSslMode(buildConnectionFromComponents());
 }
 
-const DATABASE_URL = buildSupabaseDatabaseUrl();
+const DATABASE_URL = buildDatabaseUrl();
+export const DATABASE_ENV_HELP =
+  "Configure Supabase Postgres with DATABASE_URL, POSTGRES_URL, or the POSTGRES_HOST / POSTGRES_USER / POSTGRES_PASSWORD / POSTGRES_DATABASE env vars.";
 
 export class MissingDatabaseConfigError extends Error {
   constructor() {
-    super("DATABASE_URL is not configured.");
+    super(DATABASE_ENV_HELP);
   }
 }
 
