@@ -22,7 +22,7 @@ Without `DATABASE_URL`, local auth and friend data are stored in `.local-dev-db.
 
 Supabase connection string format:
 
-`postgresql://postgres:[YOUR-PASSWORD]@db.awlgbywwwplxkjmhuzzd.supabase.co:5432/postgres`
+`postgresql://postgres.awlgbywwwplxkjmhuzzd:[YOUR-PASSWORD]@aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require`
 
 ## Vercel deployment
 
