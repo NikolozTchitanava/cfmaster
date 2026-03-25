@@ -9,17 +9,37 @@ function cleanEnvValue(value: string | undefined): string {
   return trimmed;
 }
 
-function buildSupabaseDatabaseUrl(): string {
-  const directConnectionString = cleanEnvValue(process.env.supabase_direct_connection_string);
-  const supabasePassword = cleanEnvValue(process.env.supabase_password);
+function getEnvValue(...keys: string[]): string {
+  for (const key of keys) {
+    const value = cleanEnvValue(process.env[key]);
+    if (value) {
+      return value;
+    }
+  }
 
-  if (!directConnectionString) {
+  return "";
+}
+
+function buildSupabaseDatabaseUrl(): string {
+  const connectionTemplate = getEnvValue(
+    "DATABASE_URL",
+    "POSTGRES_URL",
+    "SUPABASE_POOLER_CONNECTION_STRING",
+    "supabase_pooler_connection_string",
+    "SUPABASE_DIRECT_CONNECTION_STRING",
+    "supabase_direct_connection_string",
+    "SUPABASE_CONNECTION_STRING",
+    "supabase_connection_string"
+  );
+  const supabasePassword = getEnvValue("SUPABASE_PASSWORD", "supabase_password");
+
+  if (!connectionTemplate) {
     return "";
   }
 
-  const resolvedConnectionString = directConnectionString.includes("[YOUR-PASSWORD]")
-    ? directConnectionString.replace("[YOUR-PASSWORD]", encodeURIComponent(supabasePassword))
-    : directConnectionString;
+  const resolvedConnectionString = connectionTemplate.includes("[YOUR-PASSWORD]")
+    ? connectionTemplate.replace("[YOUR-PASSWORD]", encodeURIComponent(supabasePassword))
+    : connectionTemplate;
 
   if (!resolvedConnectionString) {
     return "";
@@ -30,7 +50,7 @@ function buildSupabaseDatabaseUrl(): string {
     : `${resolvedConnectionString}${resolvedConnectionString.includes("?") ? "&" : "?"}sslmode=require`;
 }
 
-const DATABASE_URL = cleanEnvValue(process.env.DATABASE_URL) || cleanEnvValue(process.env.POSTGRES_URL) || buildSupabaseDatabaseUrl();
+const DATABASE_URL = buildSupabaseDatabaseUrl();
 
 export class MissingDatabaseConfigError extends Error {
   constructor() {
@@ -47,6 +67,10 @@ declare global {
 
 export function isDatabaseConfigured(): boolean {
   return Boolean(DATABASE_URL);
+}
+
+export function shouldUseLocalStore(): boolean {
+  return !DATABASE_URL && process.env.NODE_ENV !== "production" && !process.env.VERCEL;
 }
 
 export function getSql(): Sql {

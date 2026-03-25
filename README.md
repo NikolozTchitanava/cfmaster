@@ -19,10 +19,13 @@ TypeScript remake of the original Codeforces tracker, built with Next.js App Rou
 5. Run `npm run dev`.
 
 Without `DATABASE_URL`, local auth and friend data are stored in `.local-dev-db.json`.
+That local file fallback is development-only and is intentionally disabled in production/serverless environments.
 
 Supabase connection string format:
 
 `postgresql://postgres.awlgbywwwplxkjmhuzzd:[YOUR-PASSWORD]@aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require`
+
+The app also accepts `SUPABASE_POOLER_CONNECTION_STRING` plus `SUPABASE_PASSWORD` and can derive `DATABASE_URL` from those env vars.
 
 ## Vercel deployment
 

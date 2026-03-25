@@ -1,7 +1,7 @@
 import { randomUUID } from "node:crypto";
 
 import type { BattleRecord, Focus, FriendCard, Snapshot, StoredUser } from "@/lib/types";
-import { ensureDatabase, getSql, isDatabaseConfigured } from "@/lib/db";
+import { ensureDatabase, getSql, shouldUseLocalStore } from "@/lib/db";
 import { fetchCodeforcesSnapshot } from "@/lib/codeforces";
 import {
   addLocalFriendOrTrackedHandle,
@@ -86,7 +86,7 @@ function parseUser(row: UserRow): StoredUser {
 }
 
 export async function getUserById(userId: string): Promise<StoredUser | null> {
-  if (!isDatabaseConfigured()) {
+  if (shouldUseLocalStore()) {
     return getLocalUserById(userId);
   }
 
@@ -103,7 +103,7 @@ export async function getUserById(userId: string): Promise<StoredUser | null> {
 }
 
 export async function getUserWithPasswordByIdentity(identity: string): Promise<(StoredUser & { passwordHash: string }) | null> {
-  if (!isDatabaseConfigured()) {
+  if (shouldUseLocalStore()) {
     return getLocalUserWithPasswordByIdentity(identity);
   }
 
@@ -129,7 +129,7 @@ export async function getUserWithPasswordByIdentity(identity: string): Promise<(
 }
 
 export async function getUserByHandle(handle: string): Promise<StoredUser | null> {
-  if (!isDatabaseConfigured()) {
+  if (shouldUseLocalStore()) {
     return getLocalUserByHandle(handle);
   }
 
@@ -150,7 +150,7 @@ export async function createUserAccount(input: {
   handle: string;
   passwordHash: string;
 }): Promise<StoredUser> {
-  if (!isDatabaseConfigured()) {
+  if (shouldUseLocalStore()) {
     return createLocalUserAccount(input);
   }
 
@@ -227,7 +227,7 @@ export async function createUserAccount(input: {
 }
 
 export async function updateUserSnapshot(userId: string): Promise<StoredUser> {
-  if (!isDatabaseConfigured()) {
+  if (shouldUseLocalStore()) {
     return updateLocalUserSnapshot(userId);
   }
 
@@ -263,7 +263,7 @@ export async function updateUserSnapshot(userId: string): Promise<StoredUser> {
 }
 
 export async function updateUserFocus(userId: string, focus: Focus): Promise<void> {
-  if (!isDatabaseConfigured()) {
+  if (shouldUseLocalStore()) {
     return updateLocalUserFocus(userId, focus);
   }
 
@@ -278,7 +278,7 @@ export async function updateUserFocus(userId: string, focus: Focus): Promise<voi
 }
 
 export async function createSession(userId: string): Promise<{ token: string; expiresAt: Date }> {
-  if (!isDatabaseConfigured()) {
+  if (shouldUseLocalStore()) {
     return createLocalSession(userId);
   }
 
@@ -296,7 +296,7 @@ export async function createSession(userId: string): Promise<{ token: string; ex
 }
 
 export async function deleteSession(token: string): Promise<void> {
-  if (!isDatabaseConfigured()) {
+  if (shouldUseLocalStore()) {
     return deleteLocalSession(token);
   }
 
@@ -309,7 +309,7 @@ export async function deleteSession(token: string): Promise<void> {
 }
 
 export async function getSessionUser(token: string): Promise<StoredUser | null> {
-  if (!isDatabaseConfigured()) {
+  if (shouldUseLocalStore()) {
     return getLocalSessionUser(token);
   }
 
@@ -328,7 +328,7 @@ export async function getSessionUser(token: string): Promise<StoredUser | null> 
 }
 
 export async function upsertHandleCache(snapshot: Snapshot): Promise<void> {
-  if (!isDatabaseConfigured()) {
+  if (shouldUseLocalStore()) {
     return upsertLocalHandleCache(snapshot);
   }
 
@@ -355,7 +355,7 @@ export async function upsertHandleCache(snapshot: Snapshot): Promise<void> {
 }
 
 export async function getTrackedSnapshot(handle: string): Promise<Snapshot | null> {
-  if (!isDatabaseConfigured()) {
+  if (shouldUseLocalStore()) {
     return getLocalTrackedSnapshot(handle);
   }
 
@@ -372,7 +372,7 @@ export async function getTrackedSnapshot(handle: string): Promise<Snapshot | nul
 }
 
 export async function addFriendOrTrackedHandle(ownerUserId: string, identifier: string): Promise<string> {
-  if (!isDatabaseConfigured()) {
+  if (shouldUseLocalStore()) {
     return addLocalFriendOrTrackedHandle(ownerUserId, identifier);
   }
 
@@ -437,7 +437,7 @@ export async function addFriendOrTrackedHandle(ownerUserId: string, identifier: 
 }
 
 export async function getFriendsForUser(userId: string): Promise<FriendCard[]> {
-  if (!isDatabaseConfigured()) {
+  if (shouldUseLocalStore()) {
     return getLocalFriendsForUser(userId);
   }
 
@@ -503,7 +503,7 @@ export async function getFriendsForUser(userId: string): Promise<FriendCard[]> {
 }
 
 export async function getBattleRecord(userId: string): Promise<BattleRecord> {
-  if (!isDatabaseConfigured()) {
+  if (shouldUseLocalStore()) {
     return getLocalBattleRecord(userId);
   }
 
@@ -533,7 +533,7 @@ export async function getFriendSnapshotForViewer(viewerId: string, handle: strin
   isRegistered: boolean;
   profileUrl: string;
 }> {
-  if (!isDatabaseConfigured()) {
+  if (shouldUseLocalStore()) {
     return getLocalFriendSnapshotForViewer(viewerId, handle);
   }
 
@@ -574,7 +574,7 @@ export async function getFriendSnapshotForViewer(viewerId: string, handle: strin
 }
 
 export async function refreshFriendSnapshot(viewerId: string, handle: string): Promise<string> {
-  if (!isDatabaseConfigured()) {
+  if (shouldUseLocalStore()) {
     return refreshLocalFriendSnapshot(viewerId, handle);
   }
 
