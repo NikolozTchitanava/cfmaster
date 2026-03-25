@@ -1,6 +1,36 @@
 import postgres, { type Sql } from "postgres";
 
-const DATABASE_URL = process.env.DATABASE_URL ?? process.env.POSTGRES_URL ?? "";
+function cleanEnvValue(value: string | undefined): string {
+  const trimmed = (value ?? "").trim();
+  if (trimmed.length >= 2 && trimmed[0] === trimmed[trimmed.length - 1] && [`"`, `'`].includes(trimmed[0])) {
+    return trimmed.slice(1, -1);
+  }
+
+  return trimmed;
+}
+
+function buildSupabaseDatabaseUrl(): string {
+  const directConnectionString = cleanEnvValue(process.env.supabase_direct_connection_string);
+  const supabasePassword = cleanEnvValue(process.env.supabase_password);
+
+  if (!directConnectionString) {
+    return "";
+  }
+
+  const resolvedConnectionString = directConnectionString.includes("[YOUR-PASSWORD]")
+    ? directConnectionString.replace("[YOUR-PASSWORD]", encodeURIComponent(supabasePassword))
+    : directConnectionString;
+
+  if (!resolvedConnectionString) {
+    return "";
+  }
+
+  return resolvedConnectionString.includes("sslmode=")
+    ? resolvedConnectionString
+    : `${resolvedConnectionString}${resolvedConnectionString.includes("?") ? "&" : "?"}sslmode=require`;
+}
+
+const DATABASE_URL = cleanEnvValue(process.env.DATABASE_URL) || cleanEnvValue(process.env.POSTGRES_URL) || buildSupabaseDatabaseUrl();
 
 export class MissingDatabaseConfigError extends Error {
   constructor() {
@@ -25,11 +55,13 @@ export function getSql(): Sql {
   }
 
   if (!global.__cfmastersSql) {
+    const isSupabase = DATABASE_URL.includes(".supabase.co");
     global.__cfmastersSql = postgres(DATABASE_URL, {
       max: 1,
       idle_timeout: 20,
       connect_timeout: 20,
-      prepare: false
+      prepare: false,
+      ssl: isSupabase ? "require" : undefined
     });
   }
 
