@@ -1,0 +1,14 @@
+.git
+.next
+.tools
+.venv
+.vercel
+node_modules
+.env
+.env.local
+.env.*.local
+.local-dev-db.json
+.cookies.txt
+cfmasters.db
+coverage
+dist
