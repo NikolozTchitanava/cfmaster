@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 type SessionPayload = {
   user: {
@@ -12,6 +13,16 @@ type SessionPayload = {
 
 export function SiteHeader() {
   const [session, setSession] = useState<SessionPayload | null>(null);
+  const pathname = usePathname();
+
+  const primaryLinks = [
+    { href: "/battle", label: "Battle", match: "/battle" },
+    { href: "/leaderboards", label: "Leaderboard", match: "/leaderboards" },
+    { href: "/profile#problems", label: "Problems", match: "/profile" },
+    { href: "/profile#contests", label: "Contests", match: "/profile" },
+    { href: "/profile", label: "Profile", match: "/profile" },
+    { href: "/battle#history", label: "Match History", match: "/battle" }
+  ] as const;
 
   useEffect(() => {
     let cancelled = false;
@@ -44,39 +55,60 @@ export function SiteHeader() {
   }, []);
 
   return (
-    <header className="site-header">
-      <Link href="/" className="brand">
-        <span className="brand-mark">cf</span>
-        <span className="brand-copy">
-          <strong>masters</strong>
-          <small>Codeforces activity tracker</small>
-        </span>
+    <>
+      <header className="site-header">
+        <div className="site-brand-block">
+          <Link href="/" className="brand">
+            <span className="brand-mark">cf</span>
+            <span className="brand-copy">
+              <strong>masters arena</strong>
+              <small>Ranked head-to-head coding</small>
+            </span>
+          </Link>
+          <div className="header-status-rail">
+            <span className="status-pill status-live">Season 01</span>
+            <span className="header-status-copy">Ranked queue online</span>
+          </div>
+        </div>
+
+        <nav className="site-nav" aria-label="Primary">
+          {primaryLinks.map((link) => {
+            const isActive = pathname === link.match || pathname.startsWith(`${link.match}/`);
+            return (
+              <Link key={link.label} href={link.href} className={`nav-chip${isActive ? " is-active" : ""}`}>
+                {link.label}
+              </Link>
+            );
+          })}
+        </nav>
+
+        <div className="site-actions">
+          <Link href="/friends" className="button button-ghost">
+            Friends
+          </Link>
+          {session?.user ? (
+            <>
+              <div className="handle-panel">
+                <span className="eyebrow">Online</span>
+                <strong>@{session.user.handle}</strong>
+              </div>
+              <form action="/auth/logout" method="post">
+                <button type="submit" className="button button-secondary">
+                  Sign out
+                </button>
+              </form>
+            </>
+          ) : (
+            <a href="/#auth" className="button button-secondary">
+              Login / Signup
+            </a>
+          )}
+        </div>
+      </header>
+
+      <Link href="/battle" className="floating-battle-cta">
+        Start Battle
       </Link>
-
-      <nav className="site-nav" aria-label="Primary">
-        <Link href="/">Home</Link>
-        <Link href="/profile">Profile</Link>
-        <Link href="/friends">Friends</Link>
-        <Link href="/battle">Battle</Link>
-        <Link href="/leaderboards">Leaderboards</Link>
-      </nav>
-
-      <div className="site-actions">
-        {session?.user ? (
-          <>
-            <span className="handle-pill">@{session.user.handle}</span>
-            <form action="/auth/logout" method="post">
-              <button type="submit" className="button button-secondary">
-                Sign out
-              </button>
-            </form>
-          </>
-        ) : (
-          <a href="/#auth" className="button button-secondary">
-            Login / Signup
-          </a>
-        )}
-      </div>
-    </header>
+    </>
   );
 }

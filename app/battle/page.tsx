@@ -1,12 +1,12 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
 import { BattleArena } from "@/components/BattleArena";
 import { FlashNotice } from "@/components/FlashNotice";
-import { ADDITIVE_CHIP_LABELS, CRUCIAL_CHIP_LABELS } from "@/lib/battle";
+import { ADDITIVE_CHIP_LABELS, CRUCIAL_CHIP_LABELS, getRankTier } from "@/lib/battle";
 import { getBattleDashboard, getSelectedBattleForUser } from "@/lib/battle-store";
 import { getCurrentUser } from "@/lib/session";
 import { getSearchParam, withMessage } from "@/lib/utils";
-import { redirect } from "next/navigation";
 
 type BattlePageProps = {
   searchParams?: Promise<Record<string, string | string[] | undefined>>;
@@ -96,8 +96,24 @@ export default async function BattlePage({ searchParams }: BattlePageProps) {
     redirect(withMessage("/", "error", "Log in to enter the battle lobby.", "auth"));
   }
   const selectedBattleId = getSearchParam(resolvedSearchParams.battle);
-  const dashboard = await getBattleDashboard(user.id);
-  const selectedBattle = selectedBattleId ? await getSelectedBattleForUser(user.id, selectedBattleId) : dashboard.activeBattle;
+  let dashboard: Awaited<ReturnType<typeof getBattleDashboard>> = {
+    activeBattle: null,
+    pendingIncoming: [],
+    pendingOutgoing: [],
+    recentBattles: [],
+    tagOptions: [],
+    suggestedOpponents: []
+  };
+  let selectedBattle = null;
+  let lobbyError: string | null = null;
+
+  try {
+    dashboard = await getBattleDashboard(user.id);
+    selectedBattle = selectedBattleId ? await getSelectedBattleForUser(user.id, selectedBattleId) : dashboard.activeBattle;
+  } catch (error) {
+    lobbyError = error instanceof Error ? error.message : "Battle lobby is unavailable right now.";
+  }
+
   const tagOptions = dashboard.tagOptions.length ? dashboard.tagOptions : ["dp", "greedy", "implementation", "math"];
 
   return (
@@ -107,51 +123,87 @@ export default async function BattlePage({ searchParams }: BattlePageProps) {
       {selectedBattle ? (
         <BattleArena room={selectedBattle} currentUserId={user.id} />
       ) : (
-        <section className="hero-grid card">
-          <div className="hero-copy">
-            <p className="eyebrow">Battle lobby</p>
-            <h1>Esports-ready 1v1 battles with visible strategy and transparent scoring.</h1>
-            <p className="lead">
-              Every duel runs for 60 minutes with 3 rating-aware problems, Codeforces-style penalty scoring, visible crucial chips, hidden additive chips, and platform rating on the line.
-            </p>
+        <>
+          <section className="arena-home-grid">
+            <article className="card arena-hero-card battle-lobby-hero">
+              <div className="arena-hero-header">
+                <div>
+                  <p className="eyebrow">Battle Lobby</p>
+                  <h1>Queue ranked duels. Draft chips. Take rating.</h1>
+                </div>
+                <span className="status-pill status-live">Ranked Open</span>
+              </div>
 
-            <div className="pill-row">
-              <span className="pill">Easy: low + 100~200</span>
-              <span className="pill">Medium: midpoint target</span>
-              <span className="pill">Hard: high + 100~200</span>
-              <span className="pill">Winner by score, solves, speed, then WA</span>
-            </div>
+              <div className="arena-hero-strip">
+                <article className="arena-pulse-card accent-accent">
+                  <span>Platform Rating</span>
+                  <strong>{user.platformRating}</strong>
+                </article>
+                <article className="arena-pulse-card accent-sky">
+                  <span>Tier</span>
+                  <strong>{getRankTier(user.platformRating)}</strong>
+                </article>
+                <article className="arena-pulse-card accent-success">
+                  <span>Wins</span>
+                  <strong>{user.battleWins}</strong>
+                </article>
+                <article className="arena-pulse-card accent-danger">
+                  <span>Losses</span>
+                  <strong>{user.battleLosses}</strong>
+                </article>
+              </div>
 
-            <div className="hero-actions">
-              <Link href="/leaderboards" className="button button-secondary">
-                Open leaderboards
-              </Link>
-            </div>
-          </div>
+              <div className="pill-row">
+                <span className="pill">Easy → low + 100~200</span>
+                <span className="pill">Medium → midpoint</span>
+                <span className="pill">Hard → high + 100~200</span>
+                <span className="pill">Visible crucial + hidden additive</span>
+              </div>
 
-          <div className="hero-side stack-gap">
-            <article className="mini-card spotlight-card">
-              <span className="eyebrow">Platform rating</span>
-              <strong>
-                {user.platformRating} • {user.handle}
-              </strong>
+              <div className="hero-actions">
+                <Link href="/leaderboards" className="button button-secondary">
+                  Open Leaderboard
+                </Link>
+                <Link href="/profile" className="button button-ghost">
+                  Open Profile
+                </Link>
+              </div>
             </article>
-            <article className="mini-card">
-              <span className="eyebrow">Battle record</span>
-              <p>
-                {user.battleWins} wins • {user.battleLosses} losses • {user.battleDraws} draws
-              </p>
-            </article>
-          </div>
-        </section>
+
+            <aside className="arena-side-column">
+              <article className="card arena-side-card">
+                <p className="eyebrow">Record</p>
+                <div className="queue-pulse-grid">
+                  <article className="mini-card queue-pulse-card">
+                    <span className="eyebrow">Wins</span>
+                    <strong>{user.battleWins}</strong>
+                    <small>Closed duels</small>
+                  </article>
+                  <article className="mini-card queue-pulse-card">
+                    <span className="eyebrow">Draws</span>
+                    <strong>{user.battleDraws}</strong>
+                    <small>Tiebreak exhausted</small>
+                  </article>
+                  <article className="mini-card queue-pulse-card">
+                    <span className="eyebrow">Losses</span>
+                    <strong>{user.battleLosses}</strong>
+                    <small>Reset and re-queue</small>
+                  </article>
+                </div>
+              </article>
+            </aside>
+          </section>
+
+          {lobbyError ? <div className="flash flash-error">{lobbyError}</div> : null}
+        </>
       )}
 
-      <section className="section-grid">
-        <article className="card">
+      <section className="arena-dashboard-grid battle-lobby-grid">
+        <article className="card battle-form-card">
           <div className="section-heading">
             <div>
-              <p className="eyebrow">Create battle</p>
-              <h2>Challenge a registered player</h2>
+              <p className="eyebrow">Challenge Console</p>
+              <h2>Draft a ranked duel</h2>
             </div>
           </div>
 
@@ -173,14 +225,14 @@ export default async function BattlePage({ searchParams }: BattlePageProps) {
           </form>
         </article>
 
-        <article className="card">
+        <article className="card battle-rules-card">
           <div className="section-heading">
             <div>
-              <p className="eyebrow">Rules snapshot</p>
-              <h2>Scoring and tie-breaks</h2>
+              <p className="eyebrow">Scoring Core</p>
+              <h2>Transparent win conditions</h2>
             </div>
           </div>
-          <div className="list-column">
+          <div className="list-column compact-list">
             <div className="list-item">
               <strong>Base scores</strong>
               <span>Easy 500 • Medium 1000 • Hard 1500</span>
@@ -198,6 +250,19 @@ export default async function BattlePage({ searchParams }: BattlePageProps) {
               <span>Pressure Cooker and Double Ban slightly soften rating swings.</span>
             </div>
           </div>
+
+          <div className="battle-chip-fields">
+            <article className="mini-card queue-pulse-card">
+              <span className="eyebrow">Visible before start</span>
+              <strong>Crucial chip</strong>
+              <small>Public strategy pressure</small>
+            </article>
+            <article className="mini-card queue-pulse-card">
+              <span className="eyebrow">Reveals later</span>
+              <strong>Additive chip</strong>
+              <small>Hidden scoring edge</small>
+            </article>
+          </div>
         </article>
       </section>
 
@@ -205,8 +270,8 @@ export default async function BattlePage({ searchParams }: BattlePageProps) {
         <article className="card">
           <div className="section-heading">
             <div>
-              <p className="eyebrow">Incoming challenges</p>
-              <h2>Lock in your chips</h2>
+              <p className="eyebrow">Incoming</p>
+              <h2>Lock your response</h2>
             </div>
           </div>
 
@@ -252,11 +317,11 @@ export default async function BattlePage({ searchParams }: BattlePageProps) {
           )}
         </article>
 
-        <article className="card">
+        <article className="card" id="history">
           <div className="section-heading">
             <div>
-              <p className="eyebrow">Queue status</p>
-              <h2>Outgoing + recent</h2>
+              <p className="eyebrow">Queue + History</p>
+              <h2>Outgoing and recent duels</h2>
             </div>
           </div>
 

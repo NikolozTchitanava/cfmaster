@@ -20,65 +20,114 @@ export default async function LeaderboardsPage({ searchParams }: LeaderboardsPag
     continent: continent === "Overall" ? undefined : continent
   });
   const countryOptions = getCountryOptions();
+  const podium = entries.slice(0, 3);
 
   return (
     <main className="page-shell">
       <FlashNotice />
 
-      <section className="hero-grid card">
-        <div className="hero-copy">
-          <p className="eyebrow">Leaderboards</p>
-          <h1>Global prestige, filtered by region, sorted only by platform rating.</h1>
-          <p className="lead">
-            Search any player, compare continents and countries, and track which handles are climbing the fastest through the platform’s battle rating ladder.
-          </p>
+      <section className="arena-home-grid">
+        <article className="card arena-hero-card leaderboard-hero-card">
+          <div className="arena-hero-header">
+            <div>
+              <p className="eyebrow">Leaderboard</p>
+              <h1>Elite ladder. Regional pressure. Rating first.</h1>
+            </div>
+            <span className="status-pill status-live">Prestige Live</span>
+          </div>
+
+          <div className="arena-hero-strip">
+            <article className="arena-pulse-card accent-accent">
+              <span>Players</span>
+              <strong>{entries.length}</strong>
+            </article>
+            <article className="arena-pulse-card accent-sky">
+              <span>Top Rating</span>
+              <strong>{entries[0]?.platformRating ?? "--"}</strong>
+            </article>
+            <article className="arena-pulse-card accent-success">
+              <span>Continent</span>
+              <strong>{continent}</strong>
+            </article>
+            <article className="arena-pulse-card accent-danger">
+              <span>Country</span>
+              <strong>{country}</strong>
+            </article>
+          </div>
 
           <div className="pill-row">
-            <span className="pill">Overall</span>
-            <span className="pill">Continent</span>
-            <span className="pill">Country</span>
-            <span className="pill">Sorted by rating descending</span>
+            <span className="pill">Global ladder</span>
+            <span className="pill">Region filters</span>
+            <span className="pill">Tier prestige</span>
+            <span className="pill">Sorted by rating</span>
           </div>
-        </div>
+        </article>
 
-        <div className="hero-side">
-          <form className="stack-form" method="get">
-            <label>
-              <span>Search username</span>
-              <input type="text" name="q" defaultValue={query} placeholder="tourist" />
-            </label>
-            <label>
-              <span>Continent</span>
-              <select name="continent" defaultValue={continent}>
-                {continents.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label>
-              <span>Country</span>
-              <select name="country" defaultValue={country}>
-                <option value="Overall">Overall</option>
-                {countryOptions.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <button type="submit" className="button button-primary wide-button">
-              Update leaderboard
-            </button>
-          </form>
-        </div>
+        <aside className="arena-side-column">
+          <article className="card arena-side-card leaderboard-filter-card">
+            <div className="section-heading">
+              <div>
+                <p className="eyebrow">Filter Stack</p>
+                <h2>Scan the ladder</h2>
+              </div>
+            </div>
+            <form className="stack-form" method="get">
+              <label>
+                <span>Search username</span>
+                <input type="text" name="q" defaultValue={query} placeholder="tourist" />
+              </label>
+              <label>
+                <span>Continent</span>
+                <select name="continent" defaultValue={continent}>
+                  {continents.map((option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <label>
+                <span>Country</span>
+                <select name="country" defaultValue={country}>
+                  <option value="Overall">Overall</option>
+                  {countryOptions.map((option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <button type="submit" className="button button-primary wide-button">
+                Update leaderboard
+              </button>
+            </form>
+          </article>
+        </aside>
       </section>
 
-      <section className="card">
+      {podium.length ? (
+        <section className="podium-grid">
+          {podium.map((entry, index) => (
+            <article key={entry.handle} className={`card podium-card place-${index + 1}`}>
+              <div className="podium-medal">{index === 0 ? "01" : index === 1 ? "02" : "03"}</div>
+              <div className="podium-copy">
+                <span className="leaderboard-flag">{getCountryFlag(entry.countryCode)}</span>
+                <h2>{entry.handle}</h2>
+                <p>{entry.rankTier}</p>
+              </div>
+              <div className="podium-rating">{entry.platformRating}</div>
+              <small>
+                {entry.country && entry.continent ? `${entry.country} • ${entry.continent}` : entry.country || entry.continent || "Unset"}
+              </small>
+            </article>
+          ))}
+        </section>
+      ) : null}
+
+      <section className="card leaderboard-stage">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">Ranked ladder</p>
+            <p className="eyebrow">Ranked Ladder</p>
             <h2>Competitive standings</h2>
           </div>
         </div>
@@ -98,27 +147,38 @@ export default async function LeaderboardsPage({ searchParams }: LeaderboardsPag
                 </tr>
               </thead>
               <tbody>
-                {entries.map((entry) => (
-                  <tr key={entry.handle}>
-                    <td>{entry.rank}</td>
-                    <td>
-                      <div className="leaderboard-player">
-                        <span className="leaderboard-flag">{getCountryFlag(entry.countryCode)}</span>
-                        <div>
-                          <strong>{entry.handle}</strong>
-                          <small>
-                            {entry.wins}W • {entry.losses}L • {entry.draws}D
-                          </small>
+                {entries.map((entry) => {
+                  const trendUp = entry.wins >= entry.losses;
+
+                  return (
+                    <tr key={entry.handle}>
+                      <td>
+                        <span className={`rank-badge${entry.rank <= 3 ? " is-medal" : ""}`}>{entry.rank}</span>
+                      </td>
+                      <td>
+                        <div className="leaderboard-player">
+                          <span className="leaderboard-flag">{getCountryFlag(entry.countryCode)}</span>
+                          <div>
+                            <strong>{entry.handle}</strong>
+                            <small>
+                              {entry.wins}W • {entry.losses}L • {entry.draws}D
+                            </small>
+                          </div>
                         </div>
-                      </div>
-                    </td>
-                    <td>{entry.platformRating}</td>
-                    <td>{entry.rankTier}</td>
-                    <td>{entry.country && entry.continent ? `${entry.country} • ${entry.continent}` : entry.country || entry.continent || "Unset"}</td>
-                    <td>{entry.battlesPlayed}</td>
-                    <td>{entry.winRate}%</td>
-                  </tr>
-                ))}
+                      </td>
+                      <td>
+                        <div className="leaderboard-rating-cell">
+                          <strong>{entry.platformRating}</strong>
+                          <span className={trendUp ? "trend-up" : "trend-down"}>{trendUp ? "▲" : "▼"}</span>
+                        </div>
+                      </td>
+                      <td>{entry.rankTier}</td>
+                      <td>{entry.country && entry.continent ? `${entry.country} • ${entry.continent}` : entry.country || entry.continent || "Unset"}</td>
+                      <td>{entry.battlesPlayed}</td>
+                      <td>{entry.winRate}%</td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>

@@ -32,17 +32,17 @@ export function RatingSparkline({ rating }: RatingSparklineProps) {
   return (
     <div className="chart-card">
       <div className="chart-copy">
-        <p className="eyebrow">Rating path</p>
-        <h3>Codeforces contest trend</h3>
-        <p>{delta === null ? "No rated contests yet." : `${delta >= 0 ? "+" : ""}${delta} overall change across recorded contests.`}</p>
+        <p className="eyebrow">Contest Curve</p>
+        <h3>Rating momentum</h3>
+        <p>{delta === null ? "No rated contests yet." : `${delta >= 0 ? "+" : ""}${delta} across recorded contests.`}</p>
       </div>
 
       {rating.length ? (
         <svg viewBox="0 0 300 120" className="sparkline" aria-label="Codeforces rating trend">
           <defs>
             <linearGradient id={gradientId} x1="0" x2="0" y1="0" y2="1">
-              <stop offset="0%" stopColor="rgba(255, 184, 108, 0.55)" />
-              <stop offset="100%" stopColor="rgba(255, 184, 108, 0.02)" />
+              <stop offset="0%" stopColor="rgba(124, 92, 255, 0.55)" />
+              <stop offset="100%" stopColor="rgba(89, 168, 255, 0.02)" />
             </linearGradient>
           </defs>
           <path d={`${buildPath(rating, 300, 108)} L 300 120 L 0 120 Z`} fill={`url(#${gradientId})`} />

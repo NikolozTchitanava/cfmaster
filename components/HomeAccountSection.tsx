@@ -45,29 +45,72 @@ export function HomeAccountSection() {
 
   if (session?.user) {
     return (
-      <section className="card status-strip">
-        <p className="eyebrow">You’re already in</p>
-        <h2>@{session.user.handle} can jump straight into profile, friends, battle, or the live leaderboard ladder.</h2>
-        <div className="hero-actions">
-          <Link href="/profile" className="button button-primary">
-            Open your profile
-          </Link>
-          <Link href="/battle" className="button button-secondary">
-            Enter battle lobby
-          </Link>
-        </div>
+      <section className="arena-access-grid">
+        <article className="card arena-access-card">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Operator</p>
+              <h2>@{session.user.handle}</h2>
+            </div>
+            <span className="status-pill status-live">Ready</span>
+          </div>
+          <div className="access-stat-strip">
+            <div className="mini-stat-card">
+              <span>Queue</span>
+              <strong>Ranked</strong>
+            </div>
+            <div className="mini-stat-card">
+              <span>Status</span>
+              <strong>Live</strong>
+            </div>
+            <div className="mini-stat-card">
+              <span>Mode</span>
+              <strong>1v1</strong>
+            </div>
+          </div>
+          <div className="hero-actions">
+            <Link href="/battle" className="button button-primary">
+              Enter Arena
+            </Link>
+            <Link href="/profile" className="button button-secondary">
+              Open Profile
+            </Link>
+            <Link href="/leaderboards" className="button button-ghost">
+              View Ladder
+            </Link>
+          </div>
+        </article>
+
+        <article className="card arena-access-card access-side-card">
+          <p className="eyebrow">Command Menu</p>
+          <div className="list-column compact-list">
+            <Link href="/profile#problems" className="list-item list-link">
+              <strong>Problems</strong>
+              <span>Daily set and practice focus</span>
+            </Link>
+            <Link href="/battle#history" className="list-item list-link">
+              <strong>Match History</strong>
+              <span>Review recent duels and scorelines</span>
+            </Link>
+            <Link href="/friends" className="list-item list-link">
+              <strong>Friends Radar</strong>
+              <span>Scout tracked handles and rivals</span>
+            </Link>
+          </div>
+        </article>
       </section>
     );
   }
 
   return (
-    <section id="auth" className="auth-grid">
-      <article className="card auth-card">
+    <section id="auth" className="arena-access-grid">
+      <article className="card auth-card arena-access-card">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">Create account</p>
-            <h2>Sign up with your handle</h2>
+            <p className="eyebrow">Enter Arena</p>
+            <h2>Create your competitor ID</h2>
           </div>
+          <span className="status-pill">New account</span>
         </div>
 
         <form action="/auth/signup" method="post" className="stack-form">
@@ -84,17 +127,18 @@ export function HomeAccountSection() {
             <input type="password" name="password" placeholder="At least 6 characters" required minLength={6} />
           </label>
           <button type="submit" className="button button-primary wide-button">
-            Create account
+            Create competitor profile
           </button>
         </form>
       </article>
 
-      <article className="card auth-card">
+      <article className="card auth-card arena-access-card">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">Welcome back</p>
-            <h2>Log in to continue</h2>
+            <p className="eyebrow">Return</p>
+            <h2>Lock back into queue</h2>
           </div>
+          <span className="status-pill status-live">Ranked</span>
         </div>
 
         <form action="/auth/login" method="post" className="stack-form">
@@ -107,7 +151,7 @@ export function HomeAccountSection() {
             <input type="password" name="password" placeholder="Your password" required />
           </label>
           <button type="submit" className="button button-secondary wide-button">
-            Log in
+            Log in to arena
           </button>
         </form>
       </article>
